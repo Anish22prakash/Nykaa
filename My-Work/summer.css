@@ -1,0 +1,108 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#firstimage{
+
+    height: auto;
+    margin: auto;
+    width:100%;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+#box{
+    background-color:rgb(130, 243, 243);
+    width:100%;
+    height:300px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(1,auto) ;
+    cursor: pointer;
+
+   
+}
+
+#box>div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:serif;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+#deal{
+
+  width:100%;
+  height:450px;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(auto,auto);
+  margin: auto;
+  cursor: pointer;
+
+}
+#deal>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+    
+
+}
+
+#discount{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+
+
+}
+
+#savings{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#lastimage{
+    width:100%;
+    border:1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#lastim{
+    width:100%;
+  height:450px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(auto,auto);
+  margin: auto;
+  background-color:lightgoldenrodyellow;
+  cursor: pointer;
+
+
+}
+
+
+
+
+
+
