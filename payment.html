@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <style>
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+   padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-transform: capitalize;
+ 
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+ 
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 70px;
+  width: 60%;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #2ecc71;
+}
+ </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <form id="form2">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="jhon">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="jhon@gamil.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="house no- lane - street">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="patna">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Bihar">
+                    </div>
+                    <div class="inputBox">
+                        <span>Pin code :</span>
+                        <input type="text" placeholder="48671">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqL5dK6wERRS9BiONo7r9aO7TQ6Wjth1DU0rFwXXH08e49HF_bgsgJwBMInf1w53Yujs0&usqp=CAU" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john" id="name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="2344-2355-3452-3656" id="cardno">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="number" placeholder="01" id="cardmonth">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2028" id="cardyear">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123" id="cardcv">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        <h2>total bill:<h3></h3></h2>
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+        
+    </form>
+
+</div>    
+    
+</body>
+</html>
+
+<script>
+  
+  paymentdata=[
+ {card:123412349867,exmonth:04,exyear:2028,cvv:123},
+ {card:123412348765,exmonth:05,exyear:2028,cvv:222},
+ {card:123412343456,exmonth:06,exyear:2028,cvv:143},
+ {card:123412347896,exmonth:02,exyear:2028,cvv:333},
+ {card:123412347886,exmonth:06,exyear:2028,cvv:456},
+ {card:123412345862,exmonth:07,exyear:2028,cvv:574},
+ {card:123412347878,exmonth:03,exyear:2028,cvv:142},
+ {card:123677341234,exmonth:07,exyear:2028,cvv:567},
+]
+
+
+ 
+    
+document.querySelector("#form2").addEventListener("submit",checkpayment)
+
+function checkpayment(){
+    event.preventDefault()
+
+ var carddata={
+     cardnam:form2.cardno.value,
+     cardmn:form2.cardmonth.value,
+     cardyer:form2.cardyear.value,
+     cardcvv:form2.cardcv.value
+ }
+ 
+  localStorage.setItem("carddata",JSON.stringify(carddata))
+
+  var cardinfo = JSON.parse(localStorage.getItem("carddata"))
+   
+ 
+   var chk =  paymentdata.find(c => c.card == cardinfo.cardnam && c.exmonth == cardinfo.cardmn && c.exyear == cardinfo.cardyer && c.cvv == cardinfo.cardcvv);
+    
+
+ if(chk != undefined || chk !=null){
+     alert("payment successful")
+     window.location.href="success.html"
+ }
+
+ else{
+     alert("card data is not valid")
+     
+ }
+}
+
+</script>

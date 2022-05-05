@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <style>
+      
+        #logbox{
+            margin: auto;
+            border: 1px solid;
+            height: 700px;
+            width: 25%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+             }
+             input{
+                 padding: 5px 5px 5px ;
+                 margin-left: 50px;
+                 margin-top: 20px;
+                 border-radius: 5px
+                 
+             }
+            
+             #submit{
+                margin-left: 50px;
+                border-radius: 5px;
+                background-color: red;
+                color: white;
+             }
+       h3,p{
+           color: gray;
+           font-size: 18px;
+           margin-left: 2%;
+           line-height: 25px;
+       }
+       h1{
+           margin-left: 2%;
+       }
+     hr+h3{
+         color: black;
+     }
+     #gift{
+         width:100%;
+         height: 30%;
+     }
+    </style>
+</head>
+<body>
+  
+
+    <div id="logbox">
+        <h1>Sign up</h1>
+        <h3>To quickly find your favourites items, saved addresses and payments.</h3>
+        <hr>
+
+        <h3 >Register and earn 2000 reward points</h3>
+
+        <img id="gift" src="https://png.pngtree.com/png-clipart/20190625/ourmid/pngtree-colorful-festival-gift-box-png-image_1511106.jpg">
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter full name"><br>
+            <input type="email" id="email" placeholder="Enter email"><br>
+    
+           
+            <input type="password" id="password" placeholder="Enter password"><br>
+             
+            <input type="submit" value="SIGN UP" id="submit">
+        </form>
+        <p>By continuing, you agree that you have read and accept our <a href="https://www.nykaa.com/terms-conditions">T&Cs</a> and <a href="https://www.nykaa.com/privacy-policy">Privacy Policy</a>.</p>
+    </div>
+   
+</body>
+</html>
+
+<script>
+      
+      document.querySelector("#form").addEventListener("submit",myfunction)
+    
+      var logdata=JSON.parse(localStorage.getItem("logindata")) || []
+
+      function myfunction(){
+        event.preventDefault()
+        var data={
+            sname:form.name.value,
+            smail:form.email.value,
+            spass:form.password.value
+        }
+
+      logdata.push(data)
+      localStorage.setItem("logindata",JSON.stringify(logdata))
+      window.location.href="login.html"
+      }
+
+</script>

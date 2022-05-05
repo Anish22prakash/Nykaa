@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        h1{
+           margin-left: 5%;
+            color:teal;
+        }
+        #login{
+            margin: auto;
+            border: 1px solid;
+            height: auto;
+            width: 25%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+           
+        }
+        #form2>input{
+          display: block;
+          margin-left: 5%;
+          margin-bottom: 5%;
+          border-radius: 5px;
+          padding: 5px 5px 5px 5px;
+        }
+        .lab{
+            margin-left: 5%;
+            padding-top: 15%;
+            font-size: 20px;
+        }
+        h3,p{
+           color: gray;
+           font-size: 18px;
+           margin-left: 2%;
+           line-height: 25px;
+       }
+       h1{
+           margin-left: 2%;
+       }
+     hr+h3{
+         color: black;
+     }
+     #logo{
+         width:100%;
+         height: 30%;
+     }
+    </style>
+</head>
+<body>
+    
+    <div id="login">
+        <h1>User Login</h1>
+        <h3>To quickly find your favourites items, saved addresses and payments.</h3>
+        <hr>
+
+        <h3 >Register and earn 2000 reward points</h3>
+        <img  id="logo" src="https://indiacityblog.com/wp-content/uploads/2020/10/afaqs_2020-06_e58cd071-0f27-4002-ba7a-14a60cca9a3c_nykaa-696x435.jpeg"> 
+        <form id="form2">
+            <label class="lab">User Email</label>
+            <input type="email" placeholder="Enter the mail" id="mail">
+            <label class="lab">User Password</label>
+            <input type="password" placeholder="Enter password" id="pass">
+            <input type="submit" value="LOGIN"> 
+        </form>
+        <p>By continuing, you agree that you have read and accept our <a href="https://www.nykaa.com/terms-conditions">T&Cs</a> and <a href="https://www.nykaa.com/privacy-policy">Privacy Policy</a>.</p>
+        
+    </div>
+</body>
+</html>
+<script>
+   
+
+    var logdata = JSON.parse(localStorage.getItem("logindata"))
+    
+    
+    document.querySelector("#form2").addEventListener("submit",check)
+
+    function check(){
+        event.preventDefault()
+
+     var data2={
+         email:form2.mail.value,
+         pass:form2.pass.value
+     }
+     
+      localStorage.setItem("localdata",JSON.stringify(data2))
+
+      var loc = JSON.parse(localStorage.getItem("localdata"))
+       
+     
+       var check = logdata.find(c => c.smail === loc.email && c.spass === loc.pass);
+        
+
+     if(check != undefined || check !=null){
+         alert("succesfully login")
+         window.location.href="home.html"
+     }
+
+     else{
+         alert("user doesn't exit")
+         
+     }
+    }
+</script>
