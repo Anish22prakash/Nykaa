@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding:0px;
+
+}
+
+
+#summersu{
+
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+#makeup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:repeat(auto,auto);
+    gap:15px;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#makeup>div{
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+}
+
+
+#makeup>div>img{
+margin-bottom: 10px;
+}
+
+
+#BigBrand{
+ 
+     margin-top: 20px;
+
+}
+
+#bigOffer{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+    gap:35px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+#bigOffer>div{
+
+
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+      width: 100%;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    
+
+
+
+
+
+    
+}
+#bigOffer>div>img{
+ 
+    margin-bottom: 10px;
+    width: 100%;
+ 
+}
+
+#seasonHott{
+
+    width:100%;
+
+}
+
+#luxe{
+    width:100%;
+}
+
+#irresi{
+
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+background-color: rgb(221, 190, 247);
+    margin: auto;
+    gap: 10px;
+    margin-top: -10px;margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+
+    /* cursor: pointer; */
+
+
+}
+#irresis{
+
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: auto;
+    gap: 10px;
+    margin-top: -10px;margin-bottom: 50px;
+    /* cursor: pointer; */
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+
+
+
+}
+
+#irresists{
+
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: auto;
+    gap: 10px;
+    margin-top: -10px;margin-bottom: 50px;
+    /* cursor: pointer; */
+    background-color: rgb(243, 251, 191);
+    font-family: 'Inter', sans-serif;
+
+
+
+    padding-left: 10px;
+
+
+}
+
+#irresists>div{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+
+}
+   
+
+
+#blockbuster{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px 30px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+
+#blockbuster>div{
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+
+
+
+}
+
+
+#blockbuster>div>img{
+    width: 100%;
+
+
+}
+
+
+
+@media all and (min-width:751px) and (max-width:1050px){
+
+    #luxe>div{
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+#makeup{
+
+   
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(auto,auto);
+    gap:15px;
+    margin-top: 20px;
+}
+
+
+
+#irresi{
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+#irresi>div{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+#blockbuster{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px 30px;
+    cursor: pointer;
+
+
+}
+
+#blockbuster>div>img{
+    width: 80%;
+    height: 70%;
+
+
+}
+
+
+
+#irresis{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 10px;
+    margin-top: -10px;margin-bottom: 50px;
+}
+
+
+#irresis>div{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#irresists{
+
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 10px;
+    margin-top: -10px;
+    ;margin-bottom: 50px;
+    /* cursor: pointer; */
+    background-color: rgb(243, 251, 191);
+
+
+
+}
+
+#irresists>div{
+
+
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media all and (min-width:450px) and (max-width:750px){
+
+    
+    #makeup{
+    
+       
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(auto,auto);
+        gap:15px;
+        margin-top: 20px;
+    }
+    
+    
+    
+    #irresi{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    
+    #irresi>div{
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    #irresis>div{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    
+    #blockbuster{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px 30px;
+        cursor: pointer;
+    
+    
+    }
+
+    #blockbuster>div>img{
+        width: 60%;
+        height: 60%;
+    
+    
+    }
+    #blockbuster>div{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    
+    
+    #irresis{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        gap: 10px;
+        margin-top: -10px;margin-bottom: 50px;
+    }
+    
+    
+    
+    #irresists{
+    
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        gap: 10px;
+        margin-top: -10px
+        ;margin-bottom: 50px;
+        /* cursor: pointer; */
+        background-color: rgb(243, 251, 191);
+
+    }
+    
+    #irresists>div{
+    
+    
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    
+    }
+}
+    
+    
+
+
