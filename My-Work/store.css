@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+#storeimg{
+
+    width:100%;
+}
+
+#store{
+    text-decoration: none;
+    color: black;
+}
+#store:hover{
+    color: rgb(96, 170, 22);
+}
+
+#lastone{
+
+    width:100%;
+}
+
+
+
+#red{
+    width:100%;
+    height:110px;
+    background-color: coral;
+
+
+}
+#red>div:first-child{
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    justify-content: space-around;
+}
+
+
+
+#red>div:first-child>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#red>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;    
+}
+
+
+#red>div:first-child>div:hover{
+     color: white;
+}
+
+   
+#lastag{
+    
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgb(251, 243, 233);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#lastag>div:hover{
+background-color: rgb(120, 215, 36);
+}
+
+.free{
+    width: 75px;
+    height:70px;
+    margin-right: 10px;
+}
+
+#column>div{
+    display: flex;
+    flex-direction: column;       
+     justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+#column{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#lastag>div:hover{
+
+background-color: rgb(120, 215, 36);
+
+}
+
+
+
+.free{
+    width: 75px;
+    height:70px;
+    margin-right: 10px;
+}
+
+
+@media all and (min-width:750px) and (max-width:1100px){
+  
+    
+    #red>div:first-child>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+
+    #red>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        font-size: 15px;
+        cursor: pointer;    
+    }
+       
+    #lastag{
+    
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-around;
+        margin: auto;
+        background-color: rgb(251, 243, 233);
+        cursor: pointer;
+        
+    }
+
+    #lastag>div:hover{
+    background-color: rgb(120, 215, 36);
+    }
+    
+    .free{
+        width: 75px;
+        height:70px;
+        margin-right: 10px;
+    }
+
+    #column>div{
+        display: flex;
+        flex-direction: column;       
+         justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    #column{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+@media all and (min-width:450px) and (max-width:750px){
+    #red{
+        width:100%;
+        height:110px;
+    }
+    #red>div:first-child>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    #red>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        font-size: 15px;
+        cursor: pointer;    
+    }
+    #red>div:first-child>div:hover{
+         color: white;
+    }
+    
+    #lastag{
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-around;
+        margin: auto;
+        background-color: rgb(251, 243, 233);
+        cursor: pointer;
+    }
+
+    #lastag>div:hover{
+    
+    background-color: rgb(120, 215, 36);
+    
+    }
+    
+    .free{
+        width: 75px;
+        height:70px;
+        margin-right: 10px;
+    }
+
+    #column>div{
+        display: flex;
+        flex-direction: column;       
+         justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    #column{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+    
+
