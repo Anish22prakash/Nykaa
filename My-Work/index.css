@@ -181,18 +181,14 @@
 
     
 #positionrelativeone{
-
     position:fixed;
     margin-bottom: 50px;
     width: 100%;
-
 }
 
 #positionrelativetwo{
     width:100%;
     height:50px;
-
-
 }
     
     #images{
@@ -231,11 +227,19 @@
         color: rgb(96, 170, 22);
     }
     
+    #lastNav{
+    
+        height:50px;
+        background-color: rgb(104, 229, 229);
+        width: 100%;
+        position:static;
+        
+        }
+    
 
     @media all and (min-width:451px) and (max-width:750px){
         
         #first{
-
             font-size: 15px;
         }
         #margin{
@@ -333,6 +337,7 @@
         font-size: 13px;
     }
 
+  
     
     #help{
         text-decoration: none;
@@ -340,7 +345,7 @@
         margin-left: -17px;
     }
 
-4
+
         #position{
             position: relative;
             height: 40px;

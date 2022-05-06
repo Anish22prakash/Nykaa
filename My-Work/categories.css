@@ -4,11 +4,15 @@
 
 }
 
+#blackadj{
+
+    height:100px;
+}
 
 #summersu{
 
     width: 100%;
-    margin-top: 50px;
+    margin-top:-45px;
 
 }
 
@@ -80,9 +84,7 @@ margin-bottom: 10px;
 }
 
 #seasonHott{
-
     width:100%;
-
 }
 
 #luxe{
@@ -90,7 +92,6 @@ margin-bottom: 10px;
 }
 
 #irresi{
-
     width:100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -115,13 +116,9 @@ background-color: rgb(221, 190, 247);
     /* cursor: pointer; */
     padding-left: 10px;
     font-family: 'Inter', sans-serif;
-
-
-
 }
 
 #irresists{
-
     width:100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -131,12 +128,7 @@ background-color: rgb(221, 190, 247);
     /* cursor: pointer; */
     background-color: rgb(243, 251, 191);
     font-family: 'Inter', sans-serif;
-
-
-
     padding-left: 10px;
-
-
 }
 
 #irresists>div{
@@ -145,7 +137,6 @@ background-color: rgb(221, 190, 247);
     justify-content: center;
     font-family: 'Inter', sans-serif;
     flex-direction: column;
-
 }
    
 
@@ -157,8 +148,6 @@ background-color: rgb(221, 190, 247);
     gap: 30px 30px;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-
-
 }
 
 
@@ -167,16 +156,20 @@ background-color: rgb(221, 190, 247);
     margin: auto;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-
-
-
 }
 
 
 #blockbuster>div>img{
     width: 100%;
+}
 
 
+#BigBrand{
+
+    width: 100%;
+    margin: auto;
+
+    
 }
 
 
