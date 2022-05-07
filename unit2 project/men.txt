@@ -1,0 +1,129 @@
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/f/2f3f144SLT-175852_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1000
+Discount:15%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/0/200m-shwh_1_370a76dc.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2000
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/8/c85df26Javinishka-RS11_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1200
+Discount:15%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/a/ba2c583324M-SHBL_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:500
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/6/d67a583359M-SHGR_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/2/1299144SLT-182297_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:499
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/1/215m-shbl_1_dcbfd72b.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1100
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/6/c6d14cdEchke-HKM180_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:999
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/r/a/rabbit_250553_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/0/b/0b4f144SLT-175854_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/8/a883583338M-SHBL_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1500
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/m/1/m151_1_1bcf5ecd.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1200
+Discount:15%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/2/b2c2532RFS0113_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/e/bear-andreas-mr_1_69d77eb7.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:300
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/9/d/9da9583350M-SHLB_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:2300
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/e/beae9b2L-A1336-0000_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:700
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/d/dd13f26Javinishka-RS10_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1500
+Discount:10%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/3/d3572c2ASSFMMOPY75644_1.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:1700
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/e/bear-uber-mr_1_829e4793.jpg?rnd=20200526195200}
+{name:men fashion
+type:Casual
+size:S/M/L/XL/XXL
+price:999
+Discount:20%
+img:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/e/7/e7ac583358M-SHGY_1.jpg?rnd=20200526195200}
+
+
+
+
+
+
+
+
+

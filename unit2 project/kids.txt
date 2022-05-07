@@ -1,0 +1,148 @@
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"1200",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/j/b/jbnbk089crnpvcr_1_5ad3ba4d.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"1300",
+Discount:"15%",
+img:"https:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/c/1cbd34dKKAW21-105_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2200",
+Discount:"20%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/k/i/kid_nehru_52a_1_874da643.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2300",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/4/3/439a63cBS22IN15PIA_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2100",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/h/k/hk-0050_1_025c3d3b.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2000",
+Discount:"20%",
+img:"https:https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/f/a/faab015BS22IN16GRA_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"1000",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/h/k/hk-0080_1_a8266c07.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"500",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/f/8/f8fb540KD-99_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"700",
+Discount:"20%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/_/b_kw4412aw21tlblu_1_e7399dc1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"600",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/f/2/f22bb81KD-90_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2300",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/k/aks-kids-ki0068_1_fa782227.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"230",
+Discount:"20%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/9/19eab81KD-88_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"279",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/f/6fab34dKKAW21-90_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"779",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/s/b/sb-000332_1_bf792ee3.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"1300",
+Discount:20%
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/c/pc-pclo0141_1_fdf676fc.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"299",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/b/pbe-5_13s_1_58f4e20b.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2300",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/3/5/350334dKKAW21-104_1.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"casual",
+size:"S/M/L/XL/XXL",
+price:"200",
+Discount:"20%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/b/pbe-4_13s_1_ab53d7c2.jpg?rnd=20200526195200"},
+
+{name:"kids fashion",
+type:"Casual",
+size:"S/M/L/XL/XXL",
+price:"2500",
+Discount:"10%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/0/60f234dKKF2103_1.jpg?rnd=20200526195200"},
+
+{name:"men fashion",
+type:"Casual",
+size:"S"/M/L/XL/XXL",
+price:"1400",
+Discount:"15%",
+img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/b/pbe-6_13s_1_6e1d14d7.jpg?rnd=20200526195200"}
+
+
+
+
+
+
+
+
+

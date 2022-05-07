@@ -1,0 +1,144 @@
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"2000",
+Discount:"10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/0/10731b4S2LIK278_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1000",
+Discount:"10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/i/n/ind158-pnk_1_3dc181e4.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"500",
+Discount:"15%"
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/3/1/3183008GLXS44B_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"700",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/e/1ea953dACHMPJAN46_01.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1300",
+Discount:"15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/b/cbce07bLBL101KS396_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"2300".
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/e/6ee0024A_1118-Purple_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1100",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/4/5/457e7deBUNYK477_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"900"
+Discount:"15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/4/d/4d4185bSJ53SET_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion"
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1200",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/9/d99960dJKPAT4989_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"999",
+Discount:"10%"
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/w/cwa1ku1360d_1_c9e86201.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"399",
+Discount:"15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/8/9/8918b20SET394-KR-NP_1.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1200",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/5/d503dd4N727_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"2500",
+Discount:"10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/5/2/5207acdWX_XXX00003484_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"2000",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/5/0/50b5bb9S2LIK194_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"599",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/8/b8ce2162921LIME_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1500",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/s/k/skd7328ss21ind_1_2972f54f.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"1899",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/2/b2a46bbS22NYK659_1.jpg?rnd=20200526195200"}
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"700",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/l/b/lbl101ks240_1_afd4a25a.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"299",
+Discount:"10%"
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/a/2ac4c2cACHSWWKSDEC01_1.jpg?rnd=20200526195200"}
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:"2500",
+Discount:"20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/7/a/7ae86bbS22NYK667A_1.jpg?rnd=20200526195200"}
+
+
+
+
+
