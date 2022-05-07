@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Fashion</title>
+    <style>
+         *{
+            margin:0px;
+            padding:0px;
+        }
+        .card{
+            width:60%;
+            border:5px solid blue;
+            margin:auto;
+        }
+        .super1{
+          display:flex;
+          
+          
+          border:1px solid red;
+        }
+        .img_box{
+            width:40%;
+            
+        }
+        .pic{
+            width:100%;
+            
+        }
+        .super1>div:nth-child(1){
+            width:30%;
+        }
+        .super1>div:nth-child(2){
+            width:95%;
+            
+            margin-left:20px;
+            border:1px solid cornflowerblue;
+        }
+        .super1>div:nth-child(3){
+            width:20%;
+            border:1px dashed red;
+        }
+        .bin_box{
+            border:1px solid green;
+
+        }
+        .fav{
+            width:40%;
+            display:block;
+            margin:auto;
+        }
+        .super2{
+            display:flex;
+            justify-content: space-between;
+        }
+        .super2>div:nth-child(2){
+            display:flex;
+        }
+        .super2>div:nth-child(2)>p:first-child{
+            color:grey;
+            text-decoration: line-through;
+        }
+        .super2>div:nth-child(2)>p:last-child{
+            margin-left:5px;
+            font-weight: bold;
+        }
+        #priceDetails{
+            border:5px solid green;
+            width:60%;
+            margin:auto;
+        }
+        .sub_bag{
+            display:flex;
+            justify-content: space-between;
+        }
+        button{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+var productArr= JSON.parse(localStorage.getItem("Products"))||[];
+
+
+ 
+var updatedArr=[];
+
+function data(productData){
+    productData.forEach(function(ele,index){
+        var eventOccured=false;
+        var card=document.createElement("div");
+        card.setAttribute("class","card");
+        
+        var box1=document.createElement("div");
+        box1.setAttribute("class","img_box")
+        var image=document.createElement("img");
+        image.setAttribute("class","pic");
+        image.setAttribute("src",ele.img_add);
+        box1.append(image);
+
+        var sub_box21=document.createElement("p");
+        sub_box21.innerText=ele.company;
+        var sub_box22=document.createElement("p");
+        sub_box22.innerText=ele.type;
+        var box2=document.createElement("div");
+        box2.append(sub_box21,sub_box22);
+
+        var fav_icon=document.createElement("img");
+        fav_icon.setAttribute("class","fav");
+        fav_icon.setAttribute("src","https://t4.ftcdn.net/jpg/00/98/26/11/240_F_98261175_Sv69O3rZsHApYkjAdrWbgQixYHwyZyOr.jpg");
+        var box3=document.createElement("div");
+        box3.setAttribute("class","bin_box");
+        box3.append(fav_icon);
+        
+        box3.addEventListener("click",function(){
+           deleteElement(ele,index);
+        });
+        
+        var super_box1=document.createElement("div");
+        super_box1.setAttribute("class","super1");
+        super_box1.append(box1,box2,box3);
+
+        var box4=document.createElement("select");
+        var o=document.createElement("option");
+        o.setAttribute("value","1");
+        o.innerText="Quantity";
+        
+        var o1=document.createElement("option");
+        o1.setAttribute("value","1");
+        o1.innerText="1";
+        var o2=document.createElement("option");
+        o2.setAttribute("value","2");
+        o2.innerText="2";
+        var o3=document.createElement("option");
+        o3.setAttribute("value","3");
+        o3.innerText="3";
+        var o4=document.createElement("option");
+        o4.setAttribute("value","4");
+        o4.innerText="4";
+        var o5=document.createElement("option");
+        o5.setAttribute("value","5");
+        o5.innerText="5";
+
+        box4.append(o,o1,o2,o3,o4,o5);
+        
+        var box5=document.createElement("div");
+        box5.setAttribute("class","price_box");
+        var sub_box51=document.createElement("p");
+        sub_box51.innerText=Number(ele.striked_price.replace(/,/g,"").slice(1))*Number(box4.value);
+        var sub_box52=document.createElement("p");
+        sub_box52.innerText=Number(ele.price.replace(/,/g,"").slice(1))*Number(box4.value);
+        updatedArr.push(Number(ele.striked_price.replace(/,/g,"").slice(1)));
+        
+        
+           var sum=updatedArr.reduce(function(acc,ele){
+                 return acc+ele;
+             },0) 
+             console.log(sum);
+             
+        box4.addEventListener("change",function(){
+            eventOccured=true;
+            myFunc(ele,index);
+            
+        })
+        function myFunc(ele,index){
+            var x=Number(ele.striked_price.replace(/,/g,"").slice(1))*Number(box4.value);
+            sub_box51.innerText=x;
+            var y=Number(ele.price.replace(/,/g,"").slice(1))*Number(box4.value);
+            sub_box52.innerText=y;
+            updatedArr[index]=x
+            
+           
+            localStorage.setItem("Q Items",JSON.stringify(updatedArr));
+            
+             var sum=updatedArr.reduce(function(acc,ele){
+                 return acc+ele;
+             },0) 
+             
+             bag_total.innerText=sum;
+        }
+         
+       
+        
+        
+        box5.append(sub_box51,sub_box52);
+        var super_box2=document.createElement("div");
+        super_box2.setAttribute("class","super2");
+        super_box2.append(box4,box5);
+        card.append(super_box1,super_box2);
+        
+        document.querySelector("body").append(card);
+        
+    
+    })
+    function deleteElement(ele,index){
+        productArr.splice(index,1);
+        localStorage.setItem("Products",JSON.stringify(productArr))
+        window.location.reload();
+    }
+    var paymentData=document.createElement("div");
+paymentData.setAttribute("id","priceDetails");
+
+var des1=document.createElement("div");
+des1.innerText="Bag Total";
+var bag_total=document.createElement("div");
+
+
+var block1=document.createElement("div");
+block1.setAttribute("class","sub_bag");
+block1.append(des1,bag_total);
+
+var des2=document.createElement("div");
+des2.innerText="Bag Discount";
+var dis_total=document.createElement("div");
+
+
+var block2=document.createElement("div");
+block2.setAttribute("class","sub_bag");
+block2.append(des2,dis_total);
+
+var des3=document.createElement("div");
+des3.innerText="Sub Total";
+var sub_total=document.createElement("div");
+
+
+var block3=document.createElement("div");
+block3.setAttribute("class","sub_bag");
+block3.append(des3,sub_total);
+
+var des4=document.createElement("div");
+des4.innerText="Shipping Charge";
+var ship_ch=document.createElement("div");
+
+
+
+var block4=document.createElement("div");
+block4.setAttribute("class","ship_ch");
+block4.append(des4,ship_ch);
+
+var des5=document.createElement("div");
+des5.innerText="Grand Total";
+var gr_total=document.createElement("div");
+gr_total.innerText="₹";
+
+var block5=document.createElement("div");
+block5.setAttribute("class","overall_price");
+block5.append(des5,gr_total);
+
+
+
+paymentData.append(block1,block2,block3,block4,block5);
+document.querySelector("body").append(paymentData);
+
+
+
+
+    
+    
+    
+}
+data(productArr);
+</script>
