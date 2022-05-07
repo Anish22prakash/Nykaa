@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #topTag{
+        padding-left: 150px;
+        color: gray;
+    }
+    #TopBox{
+       text-align: center;
+    }
+    body{
+        background-color: #F3F3F3;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        text-align: center;
+        gap: 20px;
+        width: 60%;
+        /* border: 1px solid red; */
+        margin-right: 100px;
+
+    }
+    p+img{
+      height: 200px;
+      margin-top: -10px;
+    }
+    #container>div{
+        background-color: white;
+        }
+     button{
+         background-color: white;
+         padding: 15px 15px 15px 15px;
+         /* gap: 50px; */
+         width: 50%;
+         color: white;
+         border: none;
+         font-size: 15px;
+         }
+    button:hover{
+        background-color: #fc2779;
+    }
+     .box11{
+         display: flex;
+         margin-left: 10px;
+         gap: 10px;
+     }
+     .box12{
+         text-decoration: line-through;
+     }
+     .box13{
+        display: flex;
+        gap: 10px;
+        padding-left: 40px;
+        margin-top: -20px;
+     }
+     #filter{
+         height: 500px;
+         width: 20%;
+         /* border: 1px solid blue; */
+         margin-left: 150px;
+     }
+     #flex{
+         display: flex;
+        }
+    #filBrand{
+          height: 50px;
+          width: 90%; 
+          
+        } 
+    #filterOpt div{
+          height: 50px;
+          width: 90%;
+          border: 1px solid rgb(234, 233, 233);
+          background-color: white;
+          font-size: 20px;
+          
+        }
+        #filterOpt div>p{
+            padding-left: 20px;
+            margin-top: 15px;
+           
+        }
+        #filterOpt{
+            margin-top: 30px;
+        }
+       
+     
+    
+
+</style>
+
+<body>
+    <p id="topTag">Home ❯ Makeup ❯ Face ❯ Face Primer</p>
+
+<div id="TopBox">
+    <h1>Men's Grooming: Shop All Products (1610)</h1>
+    <img src="https://images-static.nykaa.com/uploads/a24558bc-e84c-4924-9e04-5913026378ac.jpg?tr=w-1200,cm-pad_resize" alt="addimg">
+    <h1>All Products</h1>
+</div>
+<div id="flex">
+    <div id="filter">
+        <Select id="filBrand"  onchange="filven()">
+            <option value="none">Brand</option>
+            <!-- <option value="revolution">Makeup Revolution</option> -->
+            <option value="Lackme">Lackme</option>
+            <!-- <option value="Smashbox">Smashbox</option> -->
+            <option value="colorbar">Colorbar</option>
+            <option value="ParabenFree">Paraben Free</option>
+            <option value="FragranceFree">Fragrance-Free</option>
+            <option value="VitaminE">Vitamin E</option>
+            <option value="VitaminA">Vitamin A</option>
+       </Select>
+
+        <div id="filterOpt">
+              <div><p>Skin Type</p></div>
+              <div><p>Price</p></div>
+              <div><p>Preference</p></div>
+              <div><p>Pack Size</p></div>
+              <div><p>Skin Tone</p></div>
+              <div><p>Color</p></div>
+              <div><p>Coverage</p></div>
+              <div><p>Finish</p></div>
+              <div><p>Gender</p></div>
+              <div><p>Formulation</p></div>
+              <div><p>Skin Type</p></div>
+              <div> <p>Concern</p></div>
+              <div><p>Preference</p></div>
+              <div><p>Avg Customer Rating</p></div>
+              <div><p>Discount</p></div>
+             
+        </div>
+
+    </div>
+        <div id="container">
+            
+        </div>
+</div>
+
+   
+    
+</body>
+</html>
+
+<script>
+
+    var productData = 
+    [
+        {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
+            p3Name:"Beardo Hair Growth Oil",
+            p4Name:"MRP:",
+            p9Name:"₹750",
+            p7Name:"₹503" ,
+            p8Name:"33% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"Lackme"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/89c57d9NYKAB00000528_1.jpg",
+            p3Name:"Nykaa SKINRX Oil Free Vitamin C - Illuminate + Day Moisturizer",
+            p4Name:"MRP:",
+            p9Name:"₹499",
+            p7Name:"₹399" ,
+            p8Name:"25% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/57c37308904223818706_1.jpg",
+            p3Name:"Ustraa Hair Growth Vitalizer - Boost Hair Growth, Prevents Hairfall",
+            p4Name:"MRP:",
+            p9Name:"₹549",
+            p7Name:"₹412",
+            p8Name:"25% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/9/994a850NYKAB00000184_1.jpg",
+            p3Name:"Nykaa Naturals Tea Tree & Neem Purifying & Hydrating Gel",
+            p4Name:"MRP:",
+            p9Name:"₹650",
+            p7Name:"₹585 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/b/1bca9528907367001867_1.jpg",
+            p3Name:"The Man Company Charcoal Face Wash With Ylang-Ylang & Argan",
+            p4Name:"MRP:",
+            p9Name:"₹799",
+            p7Name:"₹599 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/a/2abbcfbNYKMCF0000002_1NV.jpg",
+            p3Name:"SUGAR The Base Of Glory Pore Minimizing Primer",
+            p4Name:"MRP:",
+            p9Name:"₹999",
+            p7Name:"₹799 |",
+            p8Name:"20% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"ParabenFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/1/f122cfbMCAFF00000193_1NV.jpg",
+            p3Name:"e.l.f. Cosmetics Poreless Putty Primer - Universal Sheer",
+            p4Name:"MRP:",
+            p9Name:"₹999",
+            p7Name:"₹759 |",
+            p8Name:"20% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"ParabenFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/d/cd9f379nykmcf0000008_1_new.jpg",
+            p3Name:"Colorbar Perfect Match Primer",
+            p4Name:"MRP:",
+            p9Name:"₹850",
+            p7Name:"₹595 |",
+            p8Name:"30% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/c/acf7879NYKMCF0000004_1.jpg",
+            p3Name:"MCaffeine Naked & Raw Coffee Body Polishing Oil",
+            p4Name:"MRP:",
+            p9Name:"₹1600",
+            p7Name:"₹1400 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+            
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/f/efd9418NYMCFN0000029_1.jpg",
+            p3Name:"MCaffeine Naked & Raw Coffee Body Polishing Oil",
+            p4Name:"MRP:",
+            p9Name:"₹260",
+            p7Name:"₹234 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/e/eecd789NYMCFCOM00033.jpg",
+            p3Name:"Embryolisse Lait-Creme Concentre",
+            p4Name:"MRP:",
+            p9Name:"₹1250",
+            p7Name:"₹1000 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/78b6578nykmcf0000003_1rvm.jpg",
+            p3Name:"MCaffeine Vitamin C Green Tea Face Serum for Glowing Skin with Hyaluronic Acid",
+            p4Name:"MRP:",
+            p9Name:"₹575",
+            p7Name:"₹403 |",
+            p8Name:"30% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/c/3c45fdcNYMCFN0000022_1.jpg",
+            p3Name:"M.A.C Prep + Prime Fix+ / Mini",
+            p4Name:"MRP:",
+            p9Name:"₹1200",
+            p7Name:"₹1000 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/4/c4c1578nymcfn0000031_1rvm.jpg",
+            p3Name:"Giorgio Armani Acqua Di Gio Eau De Toilette",
+            p4Name:"MRP:",
+            p9Name:"₹299",
+            p7Name:"₹229 |",
+            p8Name:"5% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/8/b8e2578nykmcf0000009_1rvm.jpg",
+            p3Name:"MCaffeine Vitamin C Green Tea Face Serum for Glowing Skin with Hyaluronic Acid",
+            p4Name:"MRP:",
+            p9Name:"₹1000",
+            p7Name:"₹990 |",
+            p8Name:"3% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/5/05e9578nymcfn0000025_1rvm.jpg",
+            p3Name:"M.A.C Prep + Prime Fix+ / Mini",
+            p4Name:"MRP:",
+            p9Name:"₹1200",
+            p7Name:"₹1000 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c157735nymcfn0000032_nkw1.jpg",
+            p3Name:"Benefit Cosmetics The POREfessional Pore Primer",
+            p4Name:"MRP:",
+            p9Name:"₹3300",
+            p7Name:"₹2296 |",
+            p8Name:"15% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/3/c335735nymcfn0000023_nkw1.jpg",
+            p3Name:"Giorgio Armani Acqua Di Gio Eau De Toilette",
+            p4Name:"MRP:",
+            p9Name:"₹4000",
+            p7Name:"₹3690 |",
+            p8Name:"12% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3360372058878.jpg",
+            p3Name:"MCaffeine Body Toning & Polishing Kit",
+            p4Name:"MRP:",
+            p9Name:"₹1200",
+            p7Name:"₹1000 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/2/c2b2509nymcfcom00057_1.jpg",
+            p3Name:"Giorgio Armani Acqua Di Gio Eau De Toilette",
+            p4Name:"MRP:",
+            p9Name:"₹3300",
+            p7Name:"₹2296 |",
+            p8Name:"15% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/5/05e9578nymcfn0000025_1rvm.jpg",
+            p3Name:"MCaffeine Body Toning & Polishing Kit",
+            p4Name:"MRP:",
+            p9Name:"₹4000",
+            p7Name:"₹3690 |",
+            p8Name:"12% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+    ]
+
+    localStorage.setItem("productDt",JSON.stringify(productData))
+    var productdata = JSON.parse(localStorage.getItem("productDt"))
+
+    var cont = document.querySelector("#container");
+
+    function display(productdata){
+      
+        document.querySelector("#container").innerHTML=" "
+    // categ.innerHTML = null;
+    productdata.forEach(function(elem){
+       var box = document.createElement("div")
+       var box1 = document.createElement("div")
+       box1.setAttribute("class","box11")
+       var box2 = document.createElement("div")
+       box2.setAttribute("class","box12")
+       var box3 = document.createElement("div")
+       box3.setAttribute("class","box13")
+       var filter = document.querySelector("select")
+
+      
+
+
+       var bestSeller = document.createElement("p")
+       bestSeller.innerText = elem.p1Name
+       bestSeller.style.color="#fc2779"
+
+       var pro_type = document.createElement("h4")
+       pro_type.innerText = elem.type;
+
+       var FEATURED = document.createElement("p")
+       FEATURED.innerText = elem.p2Name
+       FEATURED.style.color="green"
+       
+       var avatar = document.createElement("img")
+       avatar.setAttribute("src",elem.imgName)
+
+       var info = document.createElement("h3")
+       info.innerText = elem.p3Name
+       info.style.fontSize="14px"
+       info.style.paddingLeft="60px"
+       info.style.paddingRight="50px"
+
+       var price = document.createElement("p")
+       price.innerText = elem.p4Name
+       price.style.color="grey"
+
+       var pri = document.createElement("p")
+       pri.innerText = elem.p9Name
+       pri.style.color="grey"
+
+       var priceNew = document.createElement("p")
+       priceNew.innerText = elem.p7Name
+       priceNew.style.color="#001325"
+   
+       var dis = document.createElement("p")
+       dis.innerText = elem.p8Name
+       dis.style.color="green"
+
+       var comment = document.createElement("p")
+       comment.innerText = elem.p5Name
+       comment.style.color="#fc2779"
+       comment.style.marginTop="-10px"
+
+       var like = document.createElement("button")
+       like.innerText = "Like❤"
+
+       var button = document.createElement("button")
+       button.innerText = "ADD TO BAG"
+
+       box3.append(price,box2,priceNew,dis)
+       box2.append(pri)
+       box1.append(bestSeller,FEATURED)
+       box.append(box1,avatar,info,box3,comment,like,button)
+       document.querySelector("#container").append(box);
+
+       
+   })
+}
+
+
+display(productdata)
+
+
+
+function filven(){
+    var selcted= document.querySelector("#filBrand").value;
+     var filtrlist=productdata.filter(function(ele){
+          return ele.proId1==selcted
+     })
+     display(filtrlist)
+    
+}
+
+
+</script>
