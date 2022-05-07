@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_tab</title>
+
+    <style>
+
+*{
+    text-transform: capitalize;
+}
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">mens</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">womens</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">kids</button>
+    <button class="tablinks" onclick="openCity(event, 'makeup')">makeup</button>
+    <button class="tablinks" onclick="openCity(event, 'skin')">skin</button>
+    <button class="tablinks" onclick="openCity(event, 'personal')">personal care</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+        <p>mens wear</p>
+        <p>mens footwear</p>
+    </div>
+  <div id="Paris" class="tabcontent">
+       <p>womens wear</p>
+      <p>womens footwear</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+      <p>kids wear</p>
+      <p>kids footwear</p>
+  </div>
+
+  <div id="makeup" class="tabcontent">
+    <p>kids wear</p>
+    <p>kids footwear</p>
+</div>
+<div id="skin" class="tabcontent">
+  <p>kids wear</p>
+  <p>kids footwear</p>
+</div>
+<div id="personal" class="tabcontent">
+  <p>kids wear</p>
+  <p>kids footwear</p>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
