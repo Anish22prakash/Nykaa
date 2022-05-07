@@ -1,0 +1,189 @@
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15354232/2022/4/22/b2cc3abe-b780-4763-9323-edd8db5799ce1650604625687TWINTOESWomenWhiteBeigeColourblockedSneakers1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14869306/2021/10/18/9bb7a675-8eb9-4278-b804-40fc7bc8b1641634557865427DEASWomenPinkMuleswithLaserCutsFlats1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"party",
+ 
+ price:"MRP:1200",
+ Discount:"Price:1100|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16825270/2022/3/3/4a195e31-a603-40b7-931a-88ecdabecc481646295125230-PUMA-Motorsport-Women-Casual-Shoes-4901646295124860-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1300",
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16830468/2022/1/14/3eab2d21-7679-4287-9495-1a8befa31c671642146776766RedTapeWomenBlue1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1100",
+ Discount:"Price:1000|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17020622/2022/3/25/98eb7231-4f0f-4c90-97bd-d8fb20c52a0f1648202458231-Skechers-Women-Sports-Shoes-8991648202457885-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:900",
+ Discount:"Price:700|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13982198/2022/4/28/5c2aebb4-5f18-4646-95a0-5948ab5539811651127655571KalenjiByDecathlonWomenPinkSyntheticRunningShoes1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:500",
+ Discount:"Price:400|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17205530/2022/3/15/5054f3af-23c9-4131-8054-3d06b3d76c631647348361757-Nike-React-Miler-3-Womens-Road-Running-Shoes-941647348361346-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"shadi",
+ 
+ price:"MRP:2400",
+ Discount:"Price:2000|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16371750/2021/12/4/03ce04bb-c348-4681-9c18-3c6e832676111638619447183DenillWomenBlackTexturedOpenToeFlats1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17710666/2022/4/1/ee43a95e-847e-4e05-b5d4-b168ea0a659f1648825123441ASIANWomenBeigeWovenDesignSneakers1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:2500",
+ Discount:"Price:2200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17874350/2022/4/13/be22480c-ac99-469b-b503-6184fff241af1649846611043RedTapeWomenPinkSportsShoes1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Shadi",
+ 
+ price:"MRP:500",
+ Discount:"Price:400|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16943390/2022/3/3/3a44853d-a1f4-49e7-a2fa-78e496c593321646309036955-Puma-Unisex-Casual-Shoes-5231646309036567-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8609423/2019/3/8/e6ae35e0-451e-41f4-8da8-6503a950731a1552031668613-Monrow-Women-Black-Solid-Sandals-4511552031667629-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15186176/2021/8/18/0252ecab-ec1b-486c-b90e-4b6896dcab311629291570502AlishteziaWomensWhiteSkySolidPUCasualSneakers1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:2400",
+ Discount:"Price:2200|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12768984/2020/11/9/493785ee-3fe1-40a9-bb15-dfc16d0aad171604902957224VishudhWomenBrownGold-TonedColourblockedOpenToeFlats1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15384788/2022/1/28/9ac4a4af-2923-40e9-a53f-fcc09f7fb14f1643373870874-Nike-Women-Black--Red-Renew-In-Season-Training-Shoes-7691643-4.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:2200",
+ Discount:"Price:2000|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11261356/2022/4/8/c3b77b5f-8d5e-4101-82fe-1ec62ae5ac0d1649408177430-HRX-by-Hrithik-Roshan-Women-Black-Walk-Ride-Running-Shoes-64-2.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17205634/2022/3/25/de8a17c7-31a2-4d17-8916-fa0ad8c0f2421648196223018-Jordan-Series-Womens-Shoes-2941648196222652-1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17089554/2022/2/8/316da814-0e69-4181-a0a5-0cd6a16f55dc1644318149940RedTapeWomenPink1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"party",
+ 
+ price:"MRP:400",
+ Discount:"Price:200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15554010/2021/9/21/5f2fd6ff-72f2-407b-9f86-4523273003431632234048790ZAPATOZWomenWhiteColourblockedPUSneakers1.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14333116/2022/1/28/aa9bb6d0-fe83-49fc-8c92-361d782644631643361436805-El-Paso-Women-Black-Solid-Heeled-Boots-5491643361436690-6.jpg",   
+
+}
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:"MRP:1400",
+ Discount:"Price:1000|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16830464/2022/1/14/a9c02335-b1c7-4935-b964-a275c91f7d261642149765072RedTapeWomenBlack1.jpg",   
+
+}

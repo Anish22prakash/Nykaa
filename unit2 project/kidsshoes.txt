@@ -1,0 +1,136 @@
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/c/3cb769chl0486_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"2500",
+Discount:20% off,
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/2/e281d3dvivian-heels-363-beige__1_.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1500",
+Discount:"20% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/d/d/dd2bb4cTHECA00000554.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1500",
+Discount:"10% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/8/e86cbecIYKYK-DC21SN00216127_S36_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"500",
+Discount:"20% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/9/29ad289h20015_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/c/5c07289h20029_2.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"100",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/7/c7eee293031_black_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1500",
+Discount:"10% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/57ae3dfdaniela-heels-313-white__1_.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/e/fedce292073_multi_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"400",
+Discount:"10% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/f/0f7969cfl0230_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"500",
+Discount:"15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/1/016d69cfl0235_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"2500",
+Discount:"10% off",
+},
+
+{img:,
+name:"kids-shoes"
+type:"Casual",
+price:"699",
+Discount:"15% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/d/8dd21373113_pink__1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1799",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/7/472ee293028_black_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"699",
+Discount:"15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/2/323b4d6TC-SLC-S-14-GLD_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"2500",
+Discount:"15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/3/13bd289h20032_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"400",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/9/29ce289hl0493_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"600",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/7/37802dcmrl2405_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1500",
+Discount:"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/1/41f2289h20019_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"500",
+Discount:
+"20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/4/346269cfl0228_1.jpg",
+name:"kids-shoes"
+type:"Casual",
+price:"1500",
+Discount:"10% off",
+},

@@ -1,0 +1,143 @@
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/3/6/36970509_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:20% off,
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/0/1/01e146bRTE3521_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:20% off,
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/9/d943df73101Black.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:20% off,
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/1/c10b5cd6G-852-G-DGRY-BLK-1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"1500",
+Discount:"10% off",
+},
+
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/s/asics-1201a403-960glaciergrey-thunderblue_1_b88e45e3.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"1000",
+Discount:"10% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/m/s/ms_5710-coco_brn_1_7a52894b.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"599",
+Discount:"15% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/a/da309f4GA1449_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"1300",
+Discount:"15% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/f/4/f4ffce9RSO1738A_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"10% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/0/20ba279CA_MP0409_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"200",
+Discount:"15% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/e/y/ey3171_1_c635eee0.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"900",
+Discount:"15% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/0/a075972FHMFF042108FLPNYW_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"10% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/7/4/7442438GV8346_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"1500",
+Discount:20% off,
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/e/1ed6ce9RSO1734A_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"599",
+Discount:"10% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/2/c20191dJJ-253450301_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"1500",
+Discount:"15 off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/3/0/3038135Puma-19029610_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"500",
+Discount:"20% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/5/c5ed0bbBSA0313_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/c/acss-062030820-navy_1_444fd175.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/4/b47046bBSA0314_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/4/c4e3ce9RSO1731A_1.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/3/63b7e3c155_01.jpg?rnd=20200526195200",
+name:"mens-shoes"
+type:"Casual",
+price:"2500",
+Discount:"20% off",
+},
+
+
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kids{
+        
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            gap: 2px;
+            width: 100%;
+            margin: auto;
+            border: 2px;
+
+        }
+        .aadmi{
+            height: 300px;
+            width: 80%;
+            background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/313/red-heart_2764-fe0f.png);
+
+
+
+        }
+        .aadmi:hover{
+            transform: scale(1.3);
+        }
+        
+        .pinkbtn{
+            color: white;
+            background-color: rgb(131, 30, 47);
+           
+            height: 30px;
+            width: 80%;
+        }
+        .pinkbtn:hover{
+            background-color:teal;
+            transform: scale(2);
+        }
+        .photo{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+        #sorting{
+            display: flex;
+           
+            height: 200px;
+            width: 20%;
+        }
+
+         
+         .tag
+         {
+             display: flex;
+         color: white;
+         background-color: teal;
+         align-items: flex-end;
+         }
+
+       
+       .pinkbtn{
+            color: white;
+            background-color: rgb(131, 30, 47);
+           
+            height: 30px;
+            width: 80%;
+        }
+        .pinkbtn:hover{
+            background-color:teal;
+            transform: scale(2);
+        }
+        .nameofshoe{
+            color: maroon;
+        }
+        .priceofshoe{
+            color: teal;
+            text-decoration: line-through;
+        }
+        .discountonshoe{
+            color: rgb(13, 70, 13);
+        }
+        .typeofshoe{
+            color: rgb(63, 20, 102);
+        }
+        .top{
+            color: maroon;
+        }
+        .heading{
+            color: rgb(155, 18, 18);
+        }
+        .seizeofshoe{
+            color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div >
+        <img class="photo" src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/fermion/images/category_slider/img/tr:w-2698,/Sport%20shoes%20and%20sneakers_Desktop%20banner267.jpg?rnd=20200526195200" alt="">
+        <!-- <h1>Curated with Love By Nykaa Experts</h1>
+        <h2>Decorate your wardrobe</h2> -->
+        <b class="top">Kids-shoes(578❤)</b><hr>
+        <h1 class="heading">Filter your wardrobe </h1>
+     </div>
+     <div id="sorting">
+        <div>
+            <select class="tag" name="" id="seas">
+                
+                <option value="none"> Category</option>
+                <option value="Casual">Casual</option>
+                <option value="Festive">Festive</option>
+                <option value="Formal">Formal</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="sortprice" onchange="handlePriceSort()">
+                <option value="price">MRP</option>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="">
+                <option value="Discount">Discount</option>
+                <option value="10%">10%</option>
+                <option value="15%">15%</option>
+                <option value="20%">20%</option>
+            </select></div>
+
+        <div>
+            <select class="tag"
+            name=
+            "" id="">
+            <option value="gender">gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select></div>
+            
+            <div>
+                <select class="tag" name="" id="">
+                    <option value="variety">variety</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Formal">Formal</option>
+                </select></div>
+            <div>
+                <select class="tag" name="" id="">
+                <option value="Fabric">Fabric</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Polyester">Polyester</option>
+            </select></div>
+            <div>
+                <select class="tag" name="" id="">
+                    <option value="Season">Season</option>
+                    <option value="winter">winter</option>
+                    <option value="summer">summer</option>
+                </select></div>
+
+            </div>
+     
+    <div id="kids">
+        
+       
+    
+        </div>
+    
+</body>
+<script>
+kids_data = [{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/c/3cb769chl0486_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:2500,
+Discount:"Price:2000|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/2/e281d3dvivian-heels-363-beige__1_.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1500,
+Discount:"Price:1000|20% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/d/d/dd2bb4cTHECA00000554.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1500,
+Discount:"Price:1000|10% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/8/e86cbecIYKYK-DC21SN00216127_S36_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:500,
+Discount:"Price:400|20% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/9/29ad289h20015_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:2500,
+Discount:"Price:2000|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/c/5c07289h20029_2.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1000,
+Discount:"Price:800|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/7/c7eee293031_black_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1500,
+Discount:"Price:1200|10% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/57ae3dfdaniela-heels-313-white__1_.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:2500,
+Discount:"Price:2000|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/e/fedce292073_multi_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:400,
+Discount:"Price:300|10% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/f/0f7969cfl0230_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:500,
+Discount:"Price:300|15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/1/016d69cfl0235_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:2500,
+Discount:"Price:2000|10% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/1/016d69cfl0235_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:699,
+Discount:"Price:599|15% off",
+},
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/d/8dd21373113_pink__1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1799,
+Discount:"Price:1400|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/7/472ee293028_black_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:699,
+Discount:"Price:400|15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/2/323b4d6TC-SLC-S-14-GLD_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:2500,
+Discount:"Price:2000|15% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/3/13bd289h20032_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:400,
+Discount:"Price:200|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/9/29ce289hl0493_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:600,
+Discount:"Price:300|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/7/37802dcmrl2405_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1500,
+Discount:"Price:1200|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/1/41f2289h20019_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:500,
+Discount:
+"Price:400|20% off",
+},
+
+{img:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/4/346269cfl0228_1.jpg",
+name:"kids-shoes",
+type:"Casual",
+price:1500,
+Discount:"Price:10% off",
+}]
+localStorage.setItem("Nykaa",JSON.stringify(kids_data))
+var products = document.querySelector("#kids")
+var filter = document.querySelector("select")
+
+
+function Display(data){
+    products.innerHTML = null;
+    data.forEach(function(elem){
+        var card = document.createElement("div");
+        var img = document.createElement("img")
+        img.src = elem.img;
+        img.setAttribute("class","aadmi")
+        var sbtn = document.createElement("button")
+        sbtn.innerText = "ADD TO BAG ❤"
+         sbtn.setAttribute("class","pinkbtn")
+         
+        var pro_name = document.createElement("h4")
+        pro_name.innerText = elem.name;
+        pro_name.setAttribute("class","nameofshoe")
+       var pro_type = document.createElement("h3")
+        pro_type.innerText = elem.type;
+        pro_type.setAttribute("class","typeofshoe")
+        // var pro_size = document.createElement("h4")
+        // pro_size.innerText = elem.size;
+        var pro_price = document.createElement("p")
+        pro_price.innerText = elem.price
+        pro_price.setAttribute("class","priceofshoe")
+        var pro_discount = document.createElement("h4")
+        pro_discount.innerText = elem.Discount
+        pro_discount.setAttribute("class","discountonshoe")
+        
+        card.append(img,sbtn,pro_name,pro_type,pro_price,pro_discount)
+        document.querySelector("#kids").append(card)
+
+        
+    })
+    
+}
+Display(kids_data);
+filter.addEventListener("change",function(){
+    if(filter.value=="none"){
+        Display(kids_data)
+    }
+    else {
+        var filtered = kids_data.filter(function(elem){
+            return elem.type == filter.value
+        })
+
+        Display(filtered)
+    }
+})
+function handlePriceSort() {
+      var select = document.querySelector("#sortprice").value;
+      
+      if (select == "High") {
+        kids_data.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      }
+        
+        Display(kids_data);
+      
+          if (select == "Low") {
+        kids_data.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        
+        Display(kids_data);
+      }
+    }
+
+</script>
+
+
+</html>

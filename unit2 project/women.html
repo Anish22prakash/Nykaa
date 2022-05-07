@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #womens{
+        
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            gap: 2px;
+            width: 100%;
+            margin: auto;
+            border: 2px;
+
+        }
+        .aurat{
+            height: 340px;
+            width: 80%;
+            background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/313/red-heart_2764-fe0f.png);
+            border: 3px;
+
+
+        }
+        .aurat:hover{
+            transform: scale(2);
+        }
+       
+        .mahilabtn{
+            color: white;
+            background-color: rgb(131, 30, 47);
+           
+            height: 30px;
+            width: 80%;
+        }
+        .mahilabtn:hover{
+            background-color:teal;
+            transform: scale(1.3);
+        }
+        .photo{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+        #sorting{
+            display: flex;
+           
+            height: 200px;
+            width: 20%;
+        }
+
+        
+         .tag{
+             color: white;
+             background-color: teal;
+             /* height: 50px;
+             width: 100%; */
+         }
+         .nameofshoe{
+            color: maroon;
+        }
+        .priceofshoe{
+            color: teal;
+            text-decoration: line-through;
+        }
+        .discountonshoe{
+            color: rgb(13, 70, 13);
+        }
+        .typeofshoe{
+            color: rgb(63, 20, 102);
+        }
+        .top{
+            color: maroon;
+        }
+        .heading{
+            color: rgb(155, 18, 18);
+        }
+        .seizeofshoe{
+            color: aqua;
+        }
+
+      
+      
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img class="photo" src="https://images-static.nykaa.com/uploads/tr:w-2698,/017727b9-9144-4357-813c-beb1cd173a1b.jpg" alt="">
+        <b class="top">Women-Fashion(789❤)</b><hr>
+        <!-- <h1>Curated with Love By Nykaa Experts</h1>
+        <h2>Decorate your wardrobe</h2> -->
+        <h1 class="heading">Filter your wardrobe</h1>
+     </div>
+     <div id="sorting">
+        <div>
+            <select class="tag" name="" id="seas">
+                
+                <option value="none"> Category</option>
+                <option value="Casual">Casual</option>
+                <option value="Festive">Festive</option>
+                <option value="Formal">Formal</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="sortprice2" onchange="handlePriceSort()">
+                <option value="price">MRP</option>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="tag2">
+                <option value="Discount">Discount</option>
+                <option value="10%">10%</option>
+                <option value="15%">15%</option>
+                <option value="20%">20%</option>
+            </select></div>
+
+        <div>
+            <select class="tag" name=
+            "" id="tag3">
+            <option value="gender">gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select></div>
+            
+            <div>
+                <select class="tag" name="" id="tag4">
+                    <option value="variety">variety</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Formal">Formal</option>
+                </select></div>
+            <div>
+                <select class="tag" name="" id="tag5">
+                <option value="Fabric">Fabric</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Polyester">Polyester</option>
+            </select></div>
+            <div>
+                <select class="tag" name="" id="">
+                    <option value="Season">Season</option>
+                    <option value="winter">winter</option>
+                    <option value="summer">summer</option>
+                </select></div>
+                
+            </div>
+            
+
+    </div>
+    <div id="womens"></div>
+</body>
+<script>
+    var women_data = [{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:2000,
+Discount:"Price:1900|10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/0/10731b4S2LIK278_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1000,
+Discount:"Price:900|10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/i/n/ind158-pnk_1_3dc181e4.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:500,
+Discount:"Price:300|15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/3/1/3183008GLXS44B_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:700,
+Discount:"Price:500|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/1/e/1ea953dACHMPJAN46_01.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1300,
+Discount:"Price:1100|15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/b/cbce07bLBL101KS396_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:2300,
+Discount:"Price:2000|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/e/6ee0024A_1118-Purple_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1100,
+Discount:"Price:900|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/4/5/457e7deBUNYK477_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:900,
+Discount:"Price:700|15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/4/d/4d4185bSJ53SET_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1200,
+Discount:"Price:1000|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/9/d99960dJKPAT4989_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:999,
+Discount:"Price:700|10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/w/cwa1ku1360d_1_c9e86201.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:399,
+Discount:"Price:200|15%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/8/9/8918b20SET394-KR-NP_1.jpg?rnd=20200526195200"},
+
+{name :" nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1200,
+Discount:"Price:1000|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/5/d503dd4N727_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:2500,
+Discount:"Price:2200|10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/5/2/5207acdWX_XXX00003484_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:2000,
+Discount:"Price:1700|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/5/0/50b5bb9S2LIK194_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:599,
+Discount:"Price:300|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/8/b8ce2162921LIME_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1500,
+Discount:"Price:1000|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/s/k/skd7328ss21ind_1_2972f54f.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:1899,
+Discount:"Price:1400|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/2/b2a46bbS22NYK659_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:700,
+Discount:"Price:500|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/l/b/lbl101ks240_1_afd4a25a.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:299,
+Discount:"Price:250|10%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/2/a/2ac4c2cACHSWWKSDEC01_1.jpg?rnd=20200526195200"},
+
+{name : "nykaa fashion",
+type:"Ethinic",
+size:"S/L/M/XL/XXL",
+price:2500,
+Discount:"Price:2000|20%",
+img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/7/a/7ae86bbS22NYK667A_1.jpg?rnd=20200526195200"}
+
+
+
+
+
+]
+localStorage.setItem("Nykaa",JSON.stringify(women_data))
+var products = document.querySelector("#womens")
+var filter = document.querySelector("select")
+
+
+function Display(data){
+    products.innerHTML = null;
+    data.forEach(function(elem){
+        var card = document.createElement("div");
+        var img = document.createElement("img")
+        img.src = elem.img;
+        img.setAttribute("class","aurat")
+        var mbtn = document.createElement("button")
+        mbtn.innerText = "ADD TO BAG ❤"
+         mbtn.setAttribute("class","mahilabtn")
+         
+        var pro_name = document.createElement("h4")
+        pro_name.innerText = elem.name;
+        pro_name.setAttribute("class","nameofshoe")
+       var pro_type = document.createElement("h4")
+        pro_type.innerText = elem.type;
+        pro_type.setAttribute("class","typeofshoe")
+        var pro_size = document.createElement("h4")
+        pro_size.innerText = elem.size;
+        pro_size.setAttribute("class","typeofsize")
+        var pro_price = document.createElement("p")
+        pro_price.innerText = elem.price
+        pro_price.setAttribute("class","priceofshoe")
+        var pro_discount = document.createElement("h5")
+        pro_discount.innerText = elem.Discount
+        pro_discount.setAttribute("class","discountonshoe")
+        
+        card.append(img,mbtn,pro_name,pro_type,pro_size,pro_price,pro_discount)
+        document.querySelector("#womens").append(card)
+
+        
+    })
+    
+}
+Display(women_data);
+filter.addEventListener("change",function(){
+    if(filter.value=="none"){
+        Display(women_data)
+    }
+    else {
+        var filtered = women_data.filter(function(elem){
+            return elem.type == filter.value
+        })
+
+        Display(filtered)
+    }
+})
+function handlePriceSort() {
+      var select = document.querySelector("#sortprice2").value;
+      
+      if (select == "High") {
+        women_data.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      }
+        
+        Display(women_data);
+      
+          if (select == "Low") {
+        women_data.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        
+        Display(women_data);
+      }
+    }
+
+
+</script>
+</html>

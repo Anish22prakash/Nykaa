@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #womens{
+        
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            gap: 2px;
+            width: 100%;
+            margin: auto;
+            border: 2px;
+
+        }
+        .aadmi{
+            height: 320px;
+            width: 80%;
+            background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/313/red-heart_2764-fe0f.png);
+
+
+
+        }
+        .aadmi:hover{
+            transform: scale(1.5);
+        }
+       
+        
+        .pinkbtn{
+            color: white;
+            background-color: rgb(131, 30, 47);
+           
+            height: 30px;
+            width: 80%;
+        }
+        .pinkbtn:hover{
+            background-color:teal;
+            transform: scale(1.3);
+        }
+        .photo{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+        #sorting{
+            display: flex;
+           
+            height: 200px;
+            width: 20%;
+        }
+
+        
+         
+         
+         
+         .tag
+         {
+             display: flex;
+         color: white;
+         background-color: teal;
+         align-items: flex-end;
+         }
+
+      
+       .pinkbtn{
+            color: white;
+            background-color: rgb(131, 30, 47);
+           
+            height: 30px;
+            width: 80%;
+        }
+        .pinkbtn:hover{
+            background-color:teal;
+            transform: scale(1.4);
+        }
+        .nameofshoe{
+            color: maroon;
+        }
+        .priceofshoe{
+            color: teal;
+            text-decoration: line-through;
+        }
+        .discountonshoe{
+            color: rgb(13, 70, 13);
+        }
+        .typeofshoe{
+            color: rgb(63, 20, 102);
+        }
+        .top{
+            color: maroon;
+        }
+        .heading{
+            color: rgb(155, 18, 18);
+        }
+        .seizeofshoe{
+            color: aqua;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div >
+        <img class="photo" src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/fermion/images/category_slider/img/tr:w-2698,/Sport%20shoes%20and%20sneakers_Desktop%20banner267.jpg?rnd=20200526195200" alt="">
+        <!-- <h1>Curated with Love By Nykaa Experts</h1>
+        <h2>Decorate your wardrobe</h2> -->
+        <b class="top">Women-shoes(578❤)</b><hr>
+        <h1 class="heading">Filter your wardrobe </h1>
+     </div>
+     <div id="sorting">
+        <div>
+            <select class="tag" name="" id="seas">
+                
+                <option value="none"> Category</option>
+                <option value="Casual">Casual</option>
+                <option value="Festive">Festive</option>
+                <option value="Formal">Formal</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="sortprice1" onchange="handlePriceSort()">
+                <option value="price">MRP</option>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                </select>
+                </div>
+        <div>
+            <select class="tag" name="" id="">
+                <option value="Discount">Discount</option>
+                <option value="10%">10%</option>
+                <option value="15%">15%</option>
+                <option value="20%">20%</option>
+            </select></div>
+
+        <div>
+            <select class="tag"
+            name=
+            "" id="">
+            <option value="gender">gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select></div>
+            
+            <div>
+                <select class="tag" name="" id="">
+                    <option value="variety">variety</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Formal">Formal</option>
+                </select></div>
+            <div>
+                <select class="tag" name="" id="">
+                <option value="Fabric">Fabric</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Polyester">Polyester</option>
+            </select></div>
+            <div>
+                <select class="tag" name="" id="">
+                    <option value="Season">Season</option>
+                    <option value="winter">winter</option>
+                    <option value="summer">summer</option>
+                </select></div>
+
+            </div>
+     
+    <div id="womens">
+        
+       
+    
+        </div>
+    
+</body>
+<script>
+    var mahila_juta = [{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15354232/2022/4/22/b2cc3abe-b780-4763-9323-edd8db5799ce1650604625687TWINTOESWomenWhiteBeigeColourblockedSneakers1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14869306/2021/10/18/9bb7a675-8eb9-4278-b804-40fc7bc8b1641634557865427DEASWomenPinkMuleswithLaserCutsFlats1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"party",
+ 
+ price:1200,
+ Discount:"Price:1100|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16825270/2022/3/3/4a195e31-a603-40b7-931a-88ecdabecc481646295125230-PUMA-Motorsport-Women-Casual-Shoes-4901646295124860-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1300,
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16830468/2022/1/14/3eab2d21-7679-4287-9495-1a8befa31c671642146776766RedTapeWomenBlue1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1100,
+ Discount:"Price:1000|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17020622/2022/3/25/98eb7231-4f0f-4c90-97bd-d8fb20c52a0f1648202458231-Skechers-Women-Sports-Shoes-8991648202457885-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:900,
+ Discount:"Price:700|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13982198/2022/4/28/5c2aebb4-5f18-4646-95a0-5948ab5539811651127655571KalenjiByDecathlonWomenPinkSyntheticRunningShoes1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:500,
+ Discount:"Price:400|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17205530/2022/3/15/5054f3af-23c9-4131-8054-3d06b3d76c631647348361757-Nike-React-Miler-3-Womens-Road-Running-Shoes-941647348361346-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"shadi",
+ 
+ price:2400,
+ Discount:"Price:2000|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16371750/2021/12/4/03ce04bb-c348-4681-9c18-3c6e832676111638619447183DenillWomenBlackTexturedOpenToeFlats1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17710666/2022/4/1/ee43a95e-847e-4e05-b5d4-b168ea0a659f1648825123441ASIANWomenBeigeWovenDesignSneakers1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:2500,
+ Discount:"Price:2200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17874350/2022/4/13/be22480c-ac99-469b-b503-6184fff241af1649846611043RedTapeWomenPinkSportsShoes1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Shadi",
+ 
+ price:500,
+ Discount:"Price:400|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16943390/2022/3/3/3a44853d-a1f4-49e7-a2fa-78e496c593321646309036955-Puma-Unisex-Casual-Shoes-5231646309036567-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8609423/2019/3/8/e6ae35e0-451e-41f4-8da8-6503a950731a1552031668613-Monrow-Women-Black-Solid-Sandals-4511552031667629-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15186176/2021/8/18/0252ecab-ec1b-486c-b90e-4b6896dcab311629291570502AlishteziaWomensWhiteSkySolidPUCasualSneakers1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:2400,
+ Discount:"Price:2200|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12768984/2020/11/9/493785ee-3fe1-40a9-bb15-dfc16d0aad171604902957224VishudhWomenBrownGold-TonedColourblockedOpenToeFlats1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1200|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15384788/2022/1/28/9ac4a4af-2923-40e9-a53f-fcc09f7fb14f1643373870874-Nike-Women-Black--Red-Renew-In-Season-Training-Shoes-7691643-4.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:2200,
+ Discount:"Price:2000|20% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11261356/2022/4/8/c3b77b5f-8d5e-4101-82fe-1ec62ae5ac0d1649408177430-HRX-by-Hrithik-Roshan-Women-Black-Walk-Ride-Running-Shoes-64-2.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Party",
+ 
+ price:1400,
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17205634/2022/3/25/de8a17c7-31a2-4d17-8916-fa0ad8c0f2421648196223018-Jordan-Series-Womens-Shoes-2941648196222652-1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17089554/2022/2/8/316da814-0e69-4181-a0a5-0cd6a16f55dc1644318149940RedTapeWomenPink1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"party",
+ 
+ price:400,
+ Discount:"Price:200|10% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15554010/2021/9/21/5f2fd6ff-72f2-407b-9f86-4523273003431632234048790ZAPATOZWomenWhiteColourblockedPUSneakers1.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1200|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14333116/2022/1/28/aa9bb6d0-fe83-49fc-8c92-361d782644631643361436805-El-Paso-Women-Black-Solid-Heeled-Boots-5491643361436690-6.jpg",   
+
+},
+{
+ name:"Women-Shoes",
+ type:"Casual",
+ 
+ price:1400,
+ Discount:"Price:1000|15% OFF",
+ img:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16830464/2022/1/14/a9c02335-b1c7-4935-b964-a275c91f7d261642149765072RedTapeWomenBlack1.jpg",   
+
+}]
+localStorage.setItem("Nykaa",JSON.stringify(mahila_juta))
+var products = document.querySelector("#womens")
+var filter = document.querySelector("select")
+
+
+function Display(data){
+    products.innerHTML = null;
+    data.forEach(function(elem){
+        var card = document.createElement("div");
+        var img = document.createElement("img")
+        img.src = elem.img;
+        img.setAttribute("class","aadmi")
+        var sbtn = document.createElement("button")
+        sbtn.innerText = "ADD TO BAG ❤"
+         sbtn.setAttribute("class","pinkbtn")
+         
+        var pro_name = document.createElement("h4")
+        pro_name.innerText = elem.name;
+        pro_name.setAttribute("class","nameofshoe")
+       var pro_type = document.createElement("h3")
+        pro_type.innerText = elem.type;
+        pro_type.setAttribute("class","typeofshoe")
+
+        // var pro_size = document.createElement("h4")
+        // pro_size.innerText = elem.size;
+        var pro_price = document.createElement("p")
+        pro_price.innerText = elem.price
+        pro_price.setAttribute("class","priceofshoe")
+        var pro_discount = document.createElement("h4")
+        pro_discount.innerText = elem.Discount
+        pro_discount.setAttribute("class","discountonshoe")
+        
+        card.append(img,sbtn,pro_name,pro_type,pro_price,pro_discount)
+        document.querySelector("#womens").append(card)
+
+        
+    })
+    
+}
+Display(mahila_juta);
+filter.addEventListener("change",function(){
+    if(filter.value=="none"){
+        Display(mahila_juta)
+    }
+    else {
+        var filtered = mahila_juta.filter(function(elem){
+            return elem.type == filter.value
+        })
+
+        Display(filtered)
+    }
+})
+function handlePriceSort() {
+      var select = document.querySelector("#sortprice1").value;
+      
+      if (select == "High") {
+        mahila_juta.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      }
+        
+        Display(mahila_juta);
+      
+          if (select == "Low") {
+        mahila_juta.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        
+        Display(mahila_juta);
+      }
+    }
+
+
+
+</script>
+</html>
