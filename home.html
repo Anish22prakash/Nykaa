@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nykaa_homepage</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <link rel="stylesheet" href="./My-Work/index.css">
+    <link rel="stylesheet" href="./My-Work/getapp.css">
+    <link rel="stylesheet" href="./My-Work/store.css">
+    <link rel="stylesheet" href="./My-Work/gift.css">
+    <link rel="stylesheet" href="./My-Work/help.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap" rel="stylesheet">
 <style>
     *{
         margin: 0px;
@@ -19,10 +33,14 @@
         width: 100%;
     }
     #i2mg{
-       width: 100%;
-       border: 1px solid;
-       height: 250px;
-       margin-top: 1%;
+       width: 80%;
+       border: 1px;
+       height: 150px;
+       margin-top: 2%;
+       margin-left: 10%;
+    }
+    #i2mg>img{
+        width: 100%;
     }
     #i3mg{
         width: 100%;
@@ -42,7 +60,7 @@
         margin-top: 1%; 
     }
     #i5mg{
-       width: 100%;
+       width: 50%;
        margin-top: 3%;
        display: flex;
        margin-left: 3%;
@@ -108,9 +126,6 @@
        display: flex;
        background-color: #3f414d;
        justify-content: space-around;
-       
-       
-
    }
    #i13mg>div{
        width: 25%; 
@@ -130,25 +145,108 @@
        color: white;
    }
 
+   .carousel-cell {
+    width: 100%;
+    }
 
-   
-   
+    /* cell number */
+    .carousel-cell:before{
+      display: block;}
+
+      #upside{
+          margin-top: 2%;
+      }
+
 </style>
 </head>
 <body>
+<!--navbar code-->
+<div ><a href=""><img  id="nav" src="./My-Work/nav1.png" alt=""></a></div>
+
+<div id="position">
+      <div ><a id="first" href="summer.html" target="_blank">Nykaa Summer Super Saver Days Are Live - Shop Now!</a>
+    </div>
+      <div>
+            <div id="margin">
+                <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/0/191.png" alt=""></div>
+                <div ><a id="getapp" href="getapp.html" target="_blank">Get App</a></div>
+                <div> | </div>
+
+            </div>
+
+            <div id="margin">
+                <div id="symbol"><img id="images" src="https://cdn-icons-png.flaticon.com/512/67/67347.png" alt=""></div>
+                <div ><a id="store" href="store.html" target="_blank">Store & Event</a></div>
+                <div> | </div>
+
+               
+            </div>
+
+
+             <div  id="margin">
+                <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/3835/3835774.png" alt=""></div>
+                <div ><a id="gift" href="gift.html" target="_blank">Gift Card</a></div>
+                <div> | </div>
+
+            </div>
+        
+            <div  id="margin">
+                <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/189/189665.png" alt=""></div>
+                <div ><a id="help" href="help.html" target="_blank">Help</a></div>
+               
+            </div>
+
+      </div>
+      
+</div>
+<div id="nav2">
+
+
+<div id="nykaatab">
+    <div ><a href="index.html"><img  id="image" src="./My-Work/nykaa.png" alt=""></a></div>
+
+    <div><a id="categ" href="categories.html" target="_blank"> Categories</a></div>
+    <div>Brands</div>
+    <div>Nykaa Fashion </div>
+    <div>Beauty Advice</div>
+    <div>Nykaa Networks</div>
+    <div><input type="text" placeholder="Search on Nykaa"></div>
+
+</div>
+
+<div id="account"> 
+    <div>Account</div>
+    <div>Cart</div>
+</div>
+</div>
+
+
+
+
+    <!--after navbar-->
+
+
     <div id="i1mg">
         <img src="https://images-static.nykaa.com/uploads/d79ef179-462b-4774-b1c6-845855e2c487.gif?tr=w-1200,cm-pad_resize">
     </div>
 
     <div id="i2mg">
-        <div class="carousel-cell"> <img src="https://images-static.nykaa.com/uploads/7f12e789-83ce-4a44-8a0b-ac778582f2c1.png?tr=w-150,cm-pad_resize"></div>
-        <div class="carousel-cell"><img src="https://images-static.nykaa.com/uploads/f116a424-27b3-4812-a9eb-2f198fb42d0a.png?tr=w-150,cm-pad_resize"></div>
-        <div class="carousel-cell"><img src="https://images-static.nykaa.com/uploads/a2212275-11a6-4497-a56d-34c48f722cfd.png?tr=w-150,cm-pad_resize"></div>
-        <div class="carousel-cell"><img src="https://images-static.nykaa.com/uploads/eadccd61-3a75-41ad-bae2-efaa7c775520.png?tr=w-150,cm-pad_resize"></div>
-        <div class="carousel-cell"><img src="https://images-static.nykaa.com/uploads/43414e29-b414-446c-b27b-3bd628da03cc.png?tr=w-150,cm-pad_resize"></div>
-      </div>
-
+        <img src="https://images-static.nykaa.com/uploads/19ceb9f5-d791-41f1-8034-2079d1612092.gif?tr=w-1200,cm-pad_resize">
     </div>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }' id="upside">
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/fermion/images/category_slider/img/tr:w-3038,/Us-polo-assn_Shop-all_Topwear_Desktop.jpg?rnd=2020052619520">
+        </div>
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/fermion/images/category_slider/img/tr:w-3038,/Selected-home_Shop%20all%20-Top-wear_Desktop-(2).jpg?rnd=20200526195200">
+        </div>
+        <div class="carousel-cell">
+          <img class="w3-image" src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/fermion/images/category_slider/img/tr:w-3038,/Shop-all_Topwear_Desktop-(1).jpg?rnd=20200526195200">
+        </div>
+      </div>
+  
+  
 
     <div id="i3mg">
         <img src="https://images-static.nykaa.com/uploads/4292a077-f0ab-4546-a3e2-8785ddf82cc4.jpg?tr=w-1200,cm-pad_resize">
@@ -193,26 +291,11 @@
         <img src="https://images-static.nykaa.com/uploads/29509498-0285-4d51-b227-96de966a7ac2.jpg?tr=w-1200,cm-pad_resize">
      </div>
 
+     
 
-     <div id="i13mg">
-         <div id="mailbox">
-           <img src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_960_720.png">
-           <p>Get Special Discount On Your Box</p>
-           <form id="mailform">
-               <input type="email" placeholder="enter mail id">
-               <input type="submit">
-           </form>
-         </div>
-         <div>
-            <div id="mailbox">
-                <img src="https://www.nicepng.com/png/detail/87-873875_mobile-phone-call-communication-smartphone-dial-ring-mobile.png">
-                <p>EXPERIENCE THE NYKAA MOBILE APP</p>
-               
-              </div>
-         </div>
-         <div></div>
-     </div>
 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
 <script>
@@ -420,11 +503,5 @@ function displaybest(bestdata){
      window.location.href=""
    }
 }
-
-
-
-
-
-
 
 </script>
