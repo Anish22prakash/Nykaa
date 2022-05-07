@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-page</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="getapp.css">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="gift.css">
+    <link rel="stylesheet" href="help.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="menucs.css">
+
+    <style>
+  #cart{
+    width: 100%;
+            border: 1px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+  }
+      .box1{
+            display: flex;
+            margin-left: 2%;
+            width: 70%;
+            border: 1px;
+            margin-left: 5%;
+          
+        }
+        .box1>p{
+            margin-left: 5%;
+        }
+        .price{
+            color: blue;
+            text-decoration: line-through;
+        }
+        #cart>div{
+            text-align: center;
+            margin: auto;
+            margin-top: 5%;
+            width: 20%;
+            height: 450px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        }
+        .wid{
+            width: 100%;
+            height: 60%;
+        }
+        .dis{
+            font-size: 25px;
+            color: green;
+            margin: 12px 0px 10px 0px ;
+        }
+        #total{
+          border: 1px solid;
+          border-radius: 5px;
+          width: 20%;
+          height: auto;
+          margin-top: 0.5%;
+          margin-left: 3%;
+          background-color: rgb(248, 165, 11);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        }
+       .p1ro{
+           margin-left: 10%;
+          
+       }
+       #sub{
+           margin-top: 5%;
+           background-color: aqua;
+           font-size: 20px;
+       }
+       #promo{
+           margin-top: 5%;
+       }
+       #t1pt{
+           display: flex;
+           font-size: 20px;
+       }
+      #c1out{
+          height: 30px;
+          border: 1px solid;
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          margin-top: 2%;
+          border-radius: 5px;
+          color: white;
+          background-color:greenyellow;
+      }
+      #h1p2t{
+          font-size: 20px;
+          margin-left: 18%;
+         
+      }
+      #i17mg{
+          height: 30%;
+          width: 50%;
+      }
+      #p12cb{
+          position: absolute;
+          left: 28%;
+          top: 20%;
+          width: 70%;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #p12cb>img{
+          height: 300px;
+          width: 100%;
+          border-radius: 5px;
+      }
+      .pa1pa{
+          text-align: center;
+          color: rgb(77, 74, 74);
+          line-height: 25px;
+      }
+      
+       
+    </style>
+</head>
+<body>
+   
+        <div ><a href=""><img  id="nav" src="nav1.png" alt=""></a></div>
+        
+        <div id="position">
+              <div ><a id="first" href="summer.html" target="_blank">Nykaa Summer Super Saver Days Are Live - Shop Now!</a>
+            </div>
+              <div>
+                    <div id="margin">
+                        <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/0/191.png" alt=""></div>
+                        <div ><a id="getapp" href="getapp.html" target="_blank">Get App</a></div>
+                        <div> | </div>
+        
+                    </div>
+        
+                    <div id="margin">
+                        <div id="symbol"><img id="images" src="https://cdn-icons-png.flaticon.com/512/67/67347.png" alt=""></div>
+                        <div ><a id="store" href="store.html" target="_blank">Store & Event</a></div>
+                        <div> | </div>
+        
+                       
+                    </div>
+        
+        
+                     <div  id="margin">
+                        <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/3835/3835774.png" alt=""></div>
+                        <div ><a id="gift" href="gift.html" target="_blank">Gift Card</a></div>
+                        <div> | </div>
+        
+                    </div>
+                
+                    <div  id="margin">
+                        <div id="symbol"><img id="images"  src="https://cdn-icons-png.flaticon.com/128/189/189665.png" alt=""></div>
+                        <div ><a id="help" href="help.html" target="_blank">Help</a></div>
+                       
+                    </div>
+        
+              </div>
+              
+        </div>
+        <div id="nav2">
+        
+        
+        <div id="nykaatab">
+            <div ><a href="index.html"><img  id="image" src="nykaa.png" alt=""></a></div>
+        
+            <div><a id="categ" href="categories.html" target="_blank"> Categories</a></div>
+            <div>Brands</div>
+            <div>Nykaa Fashion </div>
+            <div>Beauty Advice</div>
+            <div>Nykaa Networks</div>
+            <div><input type="text" placeholder="Search on Nykaa"></div>
+        
+        </div>
+        
+        <div id="account"> 
+            <div><a href="signup.html">Account</a></div>
+            <div><a href="cartSourav.html">Cart</a></div>
+        </div>
+        </div>
+        
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">mens</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">womens</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">kids</button>
+            <button class="tablinks" onclick="openCity(event, 'makeup')">makeup</button>
+            <button class="tablinks" onclick="openCity(event, 'men personal care')">men personal care</button>
+            <button class="tablinks" onclick="openCity(event, 'eyes')">eyes</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="London" class="tabcontent">
+                <p><a href="men.html">mens wear</a></p>
+                <p><a href="mensshoes.html">mens footwear</a></p>
+            </div>
+          <div id="Paris" class="tabcontent">
+               <p><a href="women.html">womens wear</a></p>
+              <p><a href="womensshoes.html">womens footwear</a></p>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+              <p><a href="kids.html">kids wear</a</p>
+              <p><a href="kidsshoes.html">kids footwear</a></p>
+          </div>
+        
+          <div id="makeup" class="tabcontent">
+            <p><a href="face_new.html">face primer</a></p>
+            <p><a href="skin.html">facewash</a></p>
+        </div>
+        <div id="men personal care" class="tabcontent">
+          <p><a  href="Menpro.html">beard care</a></p>
+        </div>
+        <div id="eyes" class="tabcontent">
+          <p><a href="Eyes.html">eye care</a></p>
+          
+        </div>
+        
+        </div>
+        
+
+  <div id="total">
+    
+    <div id="t1pt">
+        <h2 id="h1p2t">Total amount :</h2>
+
+    </div>
+   
+    <form id="pro">
+      <input type="text" placeholder="Enter promo code" id="promo">
+      <input type="submit" id="sub">
+    </form>
+    <p class="pa1pa">To Quickly Find Your Favourites Items, Saved Addresses And Payments</p>
+    <p class="pa1pa">By Continuing, You Agree That You Have Read And Accept Our T&Cs And Privacy Policy.</p>
+    <div id="c1out"><a href="payment.html">proceed to buy</a></div>
+
+  </div>
+  <div id="p12cb"><img src="https://www.analyticssteps.com/backend/media/thumbnail/6743613/7557273_1606234814_nyka.jpg" alt=""></div>
+    <div id="cart">
+
+    </div>
+</body>
+</html>
+<script>
+
+var mencart = JSON.parse(localStorage.getItem("mensvalue"))
+  
+var sum= 0
+
+
+mencart.forEach(function (ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+   
+    sum=sum+ele.price
+   
+    
+
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.setAttribute("class","p1ro")
+   pro.style.background="green"
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+   del.addEventListener("click",function(){
+     delrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+
+
+   function delrow(ele,index){
+    mencart.splice(index,1)
+    localStorage.setItem("mensvalue",JSON.stringify(mencart))
+    window.location.reload()
+  }
+
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+
+ 
+
+
+
+
+  var womencart=JSON.parse(localStorage.getItem("womensvalue"))
+  
+  womencart.forEach(function(ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+     
+    sum=sum+ele.price
+  
+   localStorage.setItem("sumvalue",JSON.stringify(sum))
+   
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.style.background="green"
+   pro.setAttribute("class","p1ro")
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+
+   del.addEventListener("click",function(){
+     dellrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+   function dellrow(ele,index){
+    womencart.splice(index,1)
+    localStorage.setItem("womensvalue",JSON.stringify(womencart))
+    window.location.reload();
+  }
+
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+
+  
+  
+
+
+
+
+  var kidcart=JSON.parse(localStorage.getItem("kidsvalue"))
+  
+  kidcart.forEach(function(ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+     
+    sum=sum+ele.price
+  
+   localStorage.setItem("sumvalue",JSON.stringify(sum))
+   
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.style.background="green"
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.setAttribute("class","p1ro")
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+
+   del.addEventListener("click",function(){
+     dellrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+   function dellrow(ele,index){
+    kidcart.splice(index,1)
+    localStorage.setItem("kidsvalue",JSON.stringify(kidcart))
+    window.location.reload();
+  }
+   
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+ 
+
+
+  var menshoe=JSON.parse(localStorage.getItem("shoevalue"))
+
+  menshoe.forEach(function(ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+     
+    sum=sum+ele.price
+  
+   localStorage.setItem("sumvalue",JSON.stringify(sum))
+   
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.style.background="green"
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.setAttribute("class","p1ro")
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+
+   del.addEventListener("click",function(){
+     dellrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+   function dellrow(ele,index){
+    kidcart.splice(index,1)
+    localStorage.setItem("kidsvalue",JSON.stringify(kidcart))
+    window.location.reload();
+  }
+   
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+
+
+  var kidshoe=JSON.parse(localStorage.getItem("kidsho"))
+   
+  kidshoe.forEach(function(ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+     
+    sum=sum+ele.price
+  
+   localStorage.setItem("sumvalue",JSON.stringify(sum))
+   
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.style.background="green"
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.setAttribute("class","p1ro")
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+
+   del.addEventListener("click",function(){
+     dellrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+   function dellrow(ele,index){
+    kidcart.splice(index,1)
+    localStorage.setItem("kidsvalue",JSON.stringify(kidcart))
+    window.location.reload();
+  }
+   
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+
+  var womenpro=JSON.parse(localStorage.getItem("woprosvalue"))
+
+  womenpro.forEach(function(ele,index){
+    var dibba= document.createElement("div")
+    
+    var photo=document.createElement("img")
+     photo.setAttribute("src",ele.img)
+    photo.setAttribute("class","wid")
+
+    var name=document.createElement("p")
+    name.innerText=ele.name
+     
+   var chota=document.createElement("div")
+   chota.setAttribute("class","box1")
+    var price1=document.createElement("p")
+    price1.innerText=ele.price
+     
+    sum=sum+ele.price
+  
+   localStorage.setItem("sumvalue",JSON.stringify(sum))
+   
+    var price2=document.createElement("p")
+   price2.innerText=ele.Discount
+    price2.setAttribute("class","price")
+
+    var price3=document.createElement("p")
+    price3.innerText="50%"
+    price3.setAttribute("class","dis")
+
+   chota.append(price1,price2,price3)
+    
+   var del=document.createElement("button")
+   del.innerText="Delete"
+   del.style.color="white"
+   del.style.background="teal"
+   del.style.padding= "5px 25px 5px 25px"
+   del.style.borderRadius="5px"
+   del.style.cursor="pointer"
+
+   var pro=document.createElement("button")
+   pro.innerText="checkout"
+   pro.style.color="white"
+   pro.style.background="green"
+   pro.style.padding= "5px 25px 5px 25px"
+   pro.style.borderRadius="5px"
+   pro.style.cursor="pointer"
+   pro.setAttribute("class","p1ro")
+   pro.addEventListener("click",function(){
+     checkout(ele,index)
+   }) 
+
+
+   del.addEventListener("click",function(){
+     dellrow(ele,index)
+   })
+
+   dibba.append(photo,name,chota,del,pro)
+   document.querySelector("#cart").append(dibba)
+
+   function dellrow(ele,index){
+    kidcart.splice(index,1)
+    localStorage.setItem("kidsvalue",JSON.stringify(kidcart))
+    window.location.reload();
+  }
+   
+  function checkout(ele,index){
+   window.location.href="payment.html"
+  }
+  })
+
+
+
+  localStorage.setItem("sumvalue",JSON.stringify(sum))
+     var getprice=localStorage.getItem("sumvalue")
+   
+    var totprice=document.createElement("h1")
+     totprice.setAttribute("id","h1pri")
+        totprice=getprice;
+        document.querySelector("#t1pt").append(totprice)
+        
+     var token=JSON.parse(localStorage.getItem("sumvalue"))
+console.log(token)
+</script>
+<script src="menusc.js"></script>
