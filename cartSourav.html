@@ -4,95 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nykaa Fashion</title>
+    <title>Duplicate</title>
     <style>
          *{
             margin:0px;
             padding:0px;
+            color:#3F414D;
+            font-size: 14px;
+            font-family:'inter',sans-serif ;
+        }
+        #back{
+            background-color:#F3F3F3;
         }
         .card{
-            width:60%;
-            border:5px solid blue;
+            width:25%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             margin:auto;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            padding:5px;
         }
         .super1{
           display:flex;
-          
-          
-          border:1px solid red;
         }
         .img_box{
-            width:40%;
-            
+            width:80%;
         }
-        .pic{
-            width:100%;
-            
+        .img{
+            width:90%;
         }
         .super1>div:nth-child(1){
             width:30%;
         }
         .super1>div:nth-child(2){
             width:95%;
-            
+            line-height: 20px;
             margin-left:20px;
-            border:1px solid cornflowerblue;
-        }
-        .super1>div:nth-child(3){
-            width:20%;
-            border:1px dashed red;
-        }
-        .bin_box{
-            border:1px solid green;
-
         }
         .fav{
-            width:40%;
+            width:100%;
             display:block;
             margin:auto;
+        }
+       .bin_box{
+            width:5%;
+            margin-top:2%;
         }
         .super2{
             display:flex;
             justify-content: space-between;
+            padding:8px 0px;
         }
-        .super2>div:nth-child(2){
-            display:flex;
-        }
-        .super2>div:nth-child(2)>p:first-child{
-            color:grey;
-            text-decoration: line-through;
-        }
-        .super2>div:nth-child(2)>p:last-child{
-            margin-left:5px;
-            font-weight: bold;
+        .super2>select{
+            border:none;
         }
         #priceDetails{
-            border:5px solid green;
-            width:60%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width:25%;
             margin:auto;
         }
-        .sub_bag{
+        .sub_bag1,.ship_ch{
+            display:flex;
+            justify-content: space-between;
+            margin:6px 0px;
+        }
+        .pay_head{
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .overall_price{
+            display:flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: bold;
+            margin:6px 0px;
+        }
+        #finalBlock{
+            display:inline-block;
+        }
+        #next{
+            width:25%;
+            margin:auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             display:flex;
             justify-content: space-between;
         }
-        button{
-            background-color: red;
+        #next>button{
+            width:50%;
+            color:white;
+            background-color:#FC2779 ;
+            font-size: 16px;
+            font-weight: bold;
+            padding:8px 20px;
+            border:none;
+        }
+        #finalBlock>p:last-child{
+            color:#FC2779;
         }
     </style>
 </head>
-<body>
+<body id="back">
     
 </body>
 </html>
 <script>
-var productArr= JSON.parse(localStorage.getItem("Products"))||[];
-
-
- 
+var productArr= JSON.parse(localStorage.getItem("Selected Items"))||[];
 var updatedArr=[];
 
-function data(productData){
-    productData.forEach(function(ele,index){
+        var cart_title=document.createElement("p");
+        cart_title.setAttribute("class","pay_head");
+        cart_title.innerText="Shopping Bag";
+        document.querySelector("body").append(cart_title);
+
+        function data(productData){
+        productData.forEach(function(ele,index){
         var eventOccured=false;
         var card=document.createElement("div");
         card.setAttribute("class","card");
@@ -100,12 +126,12 @@ function data(productData){
         var box1=document.createElement("div");
         box1.setAttribute("class","img_box")
         var image=document.createElement("img");
-        image.setAttribute("class","pic");
-        image.setAttribute("src",ele.img_add);
+        image.setAttribute("class","img");
+        image.setAttribute("src",ele.img);
         box1.append(image);
 
         var sub_box21=document.createElement("p");
-        sub_box21.innerText=ele.company;
+        sub_box21.innerText=ele.name;
         var sub_box22=document.createElement("p");
         sub_box22.innerText=ele.type;
         var box2=document.createElement("div");
@@ -125,6 +151,8 @@ function data(productData){
         var super_box1=document.createElement("div");
         super_box1.setAttribute("class","super1");
         super_box1.append(box1,box2,box3);
+        
+        var line=document.createElement("hr");
 
         var box4=document.createElement("select");
         var o=document.createElement("option");
@@ -152,117 +180,121 @@ function data(productData){
         var box5=document.createElement("div");
         box5.setAttribute("class","price_box");
         var sub_box51=document.createElement("p");
-        sub_box51.innerText=Number(ele.striked_price.replace(/,/g,"").slice(1))*Number(box4.value);
-        var sub_box52=document.createElement("p");
-        sub_box52.innerText=Number(ele.price.replace(/,/g,"").slice(1))*Number(box4.value);
-        updatedArr.push(Number(ele.striked_price.replace(/,/g,"").slice(1)));
+        sub_box51.innerText="₹"+Number(ele.price)*Number(box4.value);
         
+        updatedArr.push(Number(ele.price));
         
-           var sum=updatedArr.reduce(function(acc,ele){
+        var sum=updatedArr.reduce(function(acc,ele){
                  return acc+ele;
-             },0) 
-             console.log(sum);
-             
+        },0) 
+        console.log(sum);
         box4.addEventListener("change",function(){
-            eventOccured=true;
-            myFunc(ele,index);
-            
+        eventOccured=true;
+        myFunc(ele,index);
         })
         function myFunc(ele,index){
-            var x=Number(ele.striked_price.replace(/,/g,"").slice(1))*Number(box4.value);
+            var x=Number(ele.price)*Number(box4.value);
             sub_box51.innerText=x;
-            var y=Number(ele.price.replace(/,/g,"").slice(1))*Number(box4.value);
-            sub_box52.innerText=y;
             updatedArr[index]=x
-            
-           
             localStorage.setItem("Q Items",JSON.stringify(updatedArr));
-            
-             var sum=updatedArr.reduce(function(acc,ele){
+            var sum=updatedArr.reduce(function(acc,ele){
                  return acc+ele;
-             },0) 
+            },0) 
              
-             bag_total.innerText=sum;
+             bag_total.innerText="₹"+sum;
+             if(sum<=499){
+                 ship_ch.innerText="Free";
+             }
+             else if(sum<2000){
+                 ship_ch.innerText=+50;
+             }
+             else if(sum<3500){
+                 ship_ch.innerText=+100;
+             }
+             else{
+                 ship_ch.innerText=+150;
+             }
+            if(ship_ch.innerText=="Free"){
+                gr_total.innerText="₹"+sum;
+            }
+            else if(ship_ch.innerText!="Free"){
+                var sum_Total=sum+Number(ship_ch.innerText);
+                gr_total.innerText="₹"+sum_Total;
+            }
         }
-         
-       
-        
-        
-        box5.append(sub_box51,sub_box52);
+        box5.append(sub_box51);
         var super_box2=document.createElement("div");
         super_box2.setAttribute("class","super2");
         super_box2.append(box4,box5);
-        card.append(super_box1,super_box2);
+        card.append(super_box1,line,super_box2);
         
         document.querySelector("body").append(card);
-        
-    
     })
     function deleteElement(ele,index){
         productArr.splice(index,1);
-        localStorage.setItem("Products",JSON.stringify(productArr))
+        localStorage.setItem("Selected Items",JSON.stringify(productArr));
         window.location.reload();
     }
+    var pDetail_head=document.createElement("p");
+    pDetail_head.setAttribute("class","pay_head");
+    pDetail_head.innerText="Payment Details";
+    var line2=document.createElement("hr");
     var paymentData=document.createElement("div");
-paymentData.setAttribute("id","priceDetails");
+    paymentData.setAttribute("id","priceDetails");
 
-var des1=document.createElement("div");
-des1.innerText="Bag Total";
-var bag_total=document.createElement("div");
+    var des1=document.createElement("div");
+    des1.innerText="Bag Total";
+    var bag_total=document.createElement("div");
+    bag_total.innerText="₹0";
 
+    var block1=document.createElement("div");
+    block1.setAttribute("class","sub_bag1");
+    block1.append(des1,bag_total);
 
-var block1=document.createElement("div");
-block1.setAttribute("class","sub_bag");
-block1.append(des1,bag_total);
+    var des4=document.createElement("div");
+    des4.innerText="Shipping Charge";
+    var ship_ch=document.createElement("div");
+    ship_ch.innerText="₹0";
 
-var des2=document.createElement("div");
-des2.innerText="Bag Discount";
-var dis_total=document.createElement("div");
+    var block4=document.createElement("div");
+    block4.setAttribute("class","ship_ch");
+    block4.append(des4,ship_ch);
 
+    var des5=document.createElement("div");
+    des5.innerText="Grand Total";
+    var gr_total=document.createElement("div");
+    gr_total.innerText="₹0";
 
-var block2=document.createElement("div");
-block2.setAttribute("class","sub_bag");
-block2.append(des2,dis_total);
-
-var des3=document.createElement("div");
-des3.innerText="Sub Total";
-var sub_total=document.createElement("div");
-
-
-var block3=document.createElement("div");
-block3.setAttribute("class","sub_bag");
-block3.append(des3,sub_total);
-
-var des4=document.createElement("div");
-des4.innerText="Shipping Charge";
-var ship_ch=document.createElement("div");
-
-
-
-var block4=document.createElement("div");
-block4.setAttribute("class","ship_ch");
-block4.append(des4,ship_ch);
-
-var des5=document.createElement("div");
-des5.innerText="Grand Total";
-var gr_total=document.createElement("div");
-gr_total.innerText="₹";
-
-var block5=document.createElement("div");
-block5.setAttribute("class","overall_price");
-block5.append(des5,gr_total);
-
-
-
-paymentData.append(block1,block2,block3,block4,block5);
-document.querySelector("body").append(paymentData);
-
-
-
-
+    var block5=document.createElement("div");
+    block5.setAttribute("class","overall_price");
+    block5.append(des5,gr_total);
     
+    paymentData.append(pDetail_head,line2,block1,block4,block5);
     
+    var finalBlock=document.createElement("div");
+    finalBlock.setAttribute("id","finalBlock")
+    var fb11=document.createElement("p");
+    fb11.innerText="Grand Total:";
+    var fb12=document.createElement("p");
+    fb12.innerText="₹0";
+    finalBlock.append(fb11,fb12);
+    var but=document.createElement("button");
+    but.innerText="Proceed >";
+    var next=document.createElement("div");
+    next.setAttribute("id","next")
+    next.append(finalBlock,but);
+    document.querySelector("body").append(paymentData,next);
     
+    but.addEventListener("click",paymentPage);
+    function paymentPage(){
+        window.location.href="payment.html";
+    }
+
 }
+
 data(productArr);
 </script>
+
+
+
+
