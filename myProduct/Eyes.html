@@ -401,6 +401,10 @@
     localStorage.setItem("productDt",JSON.stringify(productData))
     var productdata = JSON.parse(localStorage.getItem("productDt"))
 
+    var cartsData = JSON.parse(localStorage.getItem("masai-cart")) || [];
+    var likeData = JSON.parse(localStorage.getItem("masai-like")) || [];
+
+
     var cont = document.querySelector("#container");
 
     function display(productdata){
@@ -463,9 +467,25 @@
 
        var like = document.createElement("button")
        like.innerText = "Like❤"
+       like.style.cursor = "pointer"
 
        var button = document.createElement("button")
        button.innerText = "ADD TO BAG"
+       button.style.cursor = "pointer"
+
+       button.addEventListener("click",function(){
+              AddToBag(elem)
+     })
+
+  
+
+
+       like.addEventListener("click",function(){
+              AddToLike(elem)
+    })
+
+    
+      
 
        box3.append(price,box2,priceNew,dis)
        box2.append(pri)
@@ -479,9 +499,6 @@
 
 
 display(productdata)
-
-
-
 function filven(){
     var selcted= document.querySelector("#filBrand").value;
      var filtrlist=productdata.filter(function(ele){
@@ -490,6 +507,30 @@ function filven(){
      display(filtrlist)
     
 }
+
+
+function AddToBag(elem){
+
+ likeData.push(elem)
+
+localStorage.setItem("masai-cart",JSON.stringify(likeData));
+
+alert("Porduct Added To Bag")
+
+}
+
+function AddToLike(elem){
+
+cartsData.push(elem)
+console.log(cartsData)
+localStorage.setItem("masai-like",JSON.stringify(cartsData));
+
+
+alert("Porduct Added To Like")
+
+}
+
+
 
 
 </script>

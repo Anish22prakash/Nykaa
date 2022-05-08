@@ -19,7 +19,7 @@
         background-color: #F3F3F3;
     }
 
-    #container{
+    #cont{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(7,1fr);
@@ -30,11 +30,8 @@
         margin-right: 100px;
 
     }
-    p+img{
-      height: 200px;
-      margin-top: -10px;
-    }
-    #container>div{
+   
+    #cont>div{
         background-color: white;
         }
      button{
@@ -69,7 +66,7 @@
          /* border: 1px solid blue; */
          margin-left: 150px;
      }
-     #flex{
+     #fle{
          display: flex;
         }
     #filBrand{
@@ -106,7 +103,7 @@
     <img src="https://images-static.nykaa.com/uploads/66ce6cfa-9ce4-4198-b9d7-571732d5a374.jpg?tr=w-1200,cm-pad_resize" alt="addimg">
     <h1>All Products</h1>
 </div>
-<div id="flex">
+<div id="fle">
     <div id="filter">
         <Select id="filBrand"  onchange="filven()">
             <option value="none">Brand</option>
@@ -140,7 +137,7 @@
         </div>
 
     </div>
-        <div id="container">
+        <div id="cont">
             
         </div>
 </div>
@@ -401,12 +398,12 @@
     localStorage.setItem("productDt",JSON.stringify(productData))
     var productdata = JSON.parse(localStorage.getItem("productDt"))
 
-    var cont = document.querySelector("#container");
+    var cont = document.querySelector("#cont");
 
     function display(productdata){
       
-        document.querySelector("#container").innerHTML=" "
-    // categ.innerHTML = null;
+        document.querySelector("#cont").innerHTML=" "
+   
     productdata.forEach(function(elem){
        var box = document.createElement("div")
        var box1 = document.createElement("div")
@@ -471,7 +468,7 @@
        box2.append(pri)
        box1.append(bestSeller,FEATURED)
        box.append(box1,avatar,info,box3,comment,like,button)
-       document.querySelector("#container").append(box);
+       document.querySelector("#cont").append(box);
 
        
    })
