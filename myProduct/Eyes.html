@@ -401,8 +401,8 @@
     localStorage.setItem("productDt",JSON.stringify(productData))
     var productdata = JSON.parse(localStorage.getItem("productDt"))
 
-    var cartsData = JSON.parse(localStorage.getItem("masai-cart")) || [];
-    var likeData = JSON.parse(localStorage.getItem("masai-like")) || [];
+    var cartsData1 = JSON.parse(localStorage.getItem("masai-cart")) || [];
+    var likeData1 = JSON.parse(localStorage.getItem("masai-like")) || [];
 
 
     var cont = document.querySelector("#container");
@@ -511,9 +511,9 @@ function filven(){
 
 function AddToBag(elem){
 
- likeData.push(elem)
+ likeData1.push(elem)
 
-localStorage.setItem("masai-cart",JSON.stringify(likeData));
+localStorage.setItem("masai-cart",JSON.stringify(likeData1));
 
 alert("Porduct Added To Bag")
 
@@ -521,9 +521,9 @@ alert("Porduct Added To Bag")
 
 function AddToLike(elem){
 
-cartsData.push(elem)
+cartsData1.push(elem)
 console.log(cartsData)
-localStorage.setItem("masai-like",JSON.stringify(cartsData));
+localStorage.setItem("masai-like",JSON.stringify(cartsData1));
 
 
 alert("Porduct Added To Like")
