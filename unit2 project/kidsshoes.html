@@ -311,6 +311,7 @@ Discount:"Price:10% off",
 localStorage.setItem("Nykaa",JSON.stringify(kids_data))
 var products = document.querySelector("#kids")
 var filter = document.querySelector("select")
+var cartArr=JSON.parse(localStorage.getItem("cartArr"))||[];
 
 
 function Display(data){
@@ -338,6 +339,16 @@ function Display(data){
         var pro_discount = document.createElement("h4")
         pro_discount.innerText = elem.Discount
         pro_discount.setAttribute("class","discountonshoe")
+        sbtn.addEventListener("click",function(){
+            cartItems(elem);
+        })
+        function cartItems(elem){
+                cartArr.push(elem);
+                console.log(cartArr)
+                localStorage.setItem("Selected Items",JSON.stringify(cartArr));
+                alert("Item added to bag")
+
+            }   
         
         card.append(img,sbtn,pro_name,pro_type,pro_price,pro_discount)
         document.querySelector("#kids").append(card)

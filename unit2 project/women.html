@@ -306,6 +306,7 @@ img :"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/c
 localStorage.setItem("Nykaa",JSON.stringify(women_data))
 var products = document.querySelector("#womens")
 var filter = document.querySelector("select")
+var cartArr=JSON.parse(localStorage.getItem("cartArr"))||[];
 
 
 function Display(data){
@@ -334,6 +335,15 @@ function Display(data){
         var pro_discount = document.createElement("h5")
         pro_discount.innerText = elem.Discount
         pro_discount.setAttribute("class","discountonshoe")
+        mbtn.addEventListener("click",function(){
+            cartItems(elem);
+        })
+        function cartItems(elem){
+                cartArr.push(elem);
+                console.log(cartArr)
+                localStorage.setItem("Selected Items",JSON.stringify(cartArr));
+                alert("item added to bag")
+            }   
         
         card.append(img,mbtn,pro_name,pro_type,pro_size,pro_price,pro_discount)
         document.querySelector("#womens").append(card)
