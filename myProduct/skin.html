@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #topTag{
+        padding-left: 150px;
+        color: gray;
+    }
+    #TopBox{
+       text-align: center;
+    }
+    body{
+        background-color: #F3F3F3;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        text-align: center;
+        gap: 20px;
+        width: 60%;
+        /* border: 1px solid red; */
+        margin-right: 100px;
+
+    }
+    p+img{
+      height: 200px;
+      margin-top: -10px;
+    }
+    #container>div{
+        background-color: white;
+        }
+     button{
+         background-color: white;
+         padding: 15px 15px 15px 15px;
+         /* gap: 50px; */
+         width: 50%;
+         color: white;
+         border: none;
+         font-size: 15px;
+         }
+    button:hover{
+        background-color: #fc2779;
+    }
+     .box11{
+         display: flex;
+         margin-left: 10px;
+         gap: 10px;
+     }
+     .box12{
+         text-decoration: line-through;
+     }
+     .box13{
+        display: flex;
+        gap: 10px;
+        padding-left: 40px;
+        margin-top: -20px;
+     }
+     #filter{
+         height: 500px;
+         width: 20%;
+         /* border: 1px solid blue; */
+         margin-left: 150px;
+     }
+     #flex{
+         display: flex;
+        }
+    #filBrand{
+          height: 50px;
+          width: 90%;
+          
+        }
+    #filterOpt div{
+          height: 50px;
+          width: 90%;
+          border: 1px solid rgb(234, 233, 233);
+          background-color: white;
+          font-size: 20px;
+          
+        }
+        #filterOpt div>p{
+            padding-left: 20px;
+            margin-top: 15px;
+           
+        }
+        #filterOpt{
+            margin-top: 30px;
+        }
+     
+    
+
+</style>
+
+<body>
+    <p id="topTag">Home ❯ Makeup ❯ Face ❯ Face Primer</p>
+
+<div id="TopBox">
+    <h1>Face Wash Collection (317)</h1>
+    <img src="https://images-static.nykaa.com/uploads/66ce6cfa-9ce4-4198-b9d7-571732d5a374.jpg?tr=w-1200,cm-pad_resize" alt="addimg">
+    <h1>All Products</h1>
+</div>
+<div id="flex">
+    <div id="filter">
+        <Select id="filBrand"  onchange="filven()">
+            <option value="none">Brand</option>
+            <!-- <option value="revolution">Makeup Revolution</option> -->
+            <option value="Lackme">Lackme</option>
+            <!-- <option value="Smashbox">Smashbox</option> -->
+            <option value="colorbar">Colorbar</option>
+            <option value="ParabenFree">Paraben Free</option>
+            <option value="FragranceFree">Fragrance-Free</option>
+            <option value="VitaminE">Vitamin E</option>
+            <option value="VitaminA">Vitamin A</option>
+       </Select>
+
+        <div id="filterOpt">
+              <div><p>Skin Type</p></div>
+              <div><p>Price</p></div>
+              <div><p>Preference</p></div>
+              <div><p>Pack Size</p></div>
+              <div><p>Skin Tone</p></div>
+              <div><p>Color</p></div>
+              <div><p>Coverage</p></div>
+              <div><p>Finish</p></div>
+              <div><p>Gender</p></div>
+              <div><p>Formulation</p></div>
+              <div><p>Skin Type</p></div>
+              <div> <p>Concern</p></div>
+              <div><p>Preference</p></div>
+              <div><p>Avg Customer Rating</p></div>
+              <div><p>Discount</p></div>
+             
+        </div>
+
+    </div>
+        <div id="container">
+            
+        </div>
+</div>
+
+   
+    
+</body>
+</html>
+
+<script>
+
+    var productData = 
+    [
+        {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/d/c/dcd7144737534800041_1.jpg",
+            p3Name:"Plum Green Tea Pore Cleansing Face Wash",
+            p4Name:"MRP:",
+            p9Name:"₹150",
+            p7Name:"₹203" ,
+            p8Name:"13% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"Lackme"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/6/a6bf37c8906087770671aw__1_.jpg",
+            p3Name:"Mamaearth Ubtan Face Wash With Turmeric & Saffron For Tan",
+            p4Name:"MRP:",
+            p9Name:"₹299",
+            p7Name:"₹399" ,
+            p8Name:"25% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/4/24e638aNYCETA0000010-new1.jpg",
+            p3Name:"Cetaphil Gentle Skin Cleanser",
+            p4Name:"MRP:",
+            p9Name:"₹549",
+            p7Name:"₹412",
+            p8Name:"25% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/8/387f677lakme_b2g1_combo_1.jpg",
+            p3Name:"Lakme Facewash Strawberry + Kiwi + Lemon Combo",
+            p4Name:"MRP:",
+            p9Name:"₹650",
+            p7Name:"₹585 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"Lackme"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/f/cfc0449DOTKE00000132-1.jpg",
+            p3Name:"Dot & Key Cica Calming Blemish Clearing Face Wash",
+            p4Name:"MRP:",
+            p9Name:"₹799",
+            p7Name:"₹599 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/2/62ec67727278_h1_8901030773563.jpg",
+            p3Name:"Simple Kind To Skin Refreshing Facial Wash",
+            p4Name:"MRP:",
+            p9Name:"₹999",
+            p7Name:"₹799 |",
+            p8Name:"20% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"Lackme"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/6/665b948LOREA00000113_1.jpg",
+            p3Name:"L'Oreal Paris Revitalift Hyaluronic Acid Hydrating Gel Cleanser",
+            p4Name:"MRP:",
+            p9Name:"₹299",
+            p7Name:"₹159 |",
+            p8Name:"20% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"ParabenFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/a/eaea13d8901138844172_1.jpg",
+            p3Name:"Himalaya Purifying Neem Face Wash",
+            p4Name:"MRP:",
+            p9Name:"₹850",
+            p7Name:"₹595 |",
+            p8Name:"30% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/a/6af0d878901030828577_1.jpg",
+            p3Name:"Lotus Make-Up Ecostay Kajal",
+            p4Name:"MRP:",
+            p9Name:"₹600",
+            p7Name:"₹400 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"Lackme"},
+            
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/1/81fee09MINIM00000019.jpg",
+            p3Name:"Insight Cosmetics Intense Kohl Kajal",
+            p4Name:"MRP:",
+            p9Name:"₹260",
+            p7Name:"₹234 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904245712808_1_2.jpg",
+            p3Name:"Faces Canada Magneteyes Kajal - Deep Black",
+            p4Name:"MRP:",
+            p9Name:"₹250",
+            p7Name:"₹100 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"smashbox"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/t/h/the-face-shop-rice-water-bright-foaming-cleanser.jpg",
+            p3Name:"SUGAR Kohl Of Honour Intense Kajal - 01 Black Out",
+            p4Name:"MRP:",
+            p9Name:"₹575",
+            p7Name:"₹403 |",
+            p8Name:"30% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"colorbar"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/3/a3c4910NYCETA0000008_1.jpg",
+            p3Name:"Lakme Eyeconic Kajal - Twin Pack",
+            p4Name:"MRP:",
+            p9Name:"₹200",
+            p7Name:"₹100 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/3/9300607379792_1.jpg",
+            p3Name:"Nykaa Black Magic Kajal - Black",
+            p4Name:"MRP:",
+            p9Name:"₹299",
+            p7Name:"₹229 |",
+            p8Name:"5% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/3/9300607379792_1.jpg",
+            p3Name:"Elle 18 Eye Drama Kajal - Bold Black",
+            p4Name:"MRP:",
+            p9Name:"₹1000",
+            p7Name:"₹990 |",
+            p8Name:"3% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/8/982b2aeNYKBNDCTP0009.jpg",
+            p3Name:"Nykaa Rock the Line Kajal Eyeliner - 001 Jet Black",
+            p4Name:"MRP:",
+            p9Name:"₹200",
+            p7Name:"₹100 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"FragranceFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/4/c4f2980LOREA00000115_1.jpg",
+            p3Name:"PAC Longlasting Kohl Pencil Black",
+            p4Name:"MRP:",
+            p9Name:"₹300",
+            p7Name:"₹229 |",
+            p8Name:"15% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+            {   p1Name:"", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/4/74e7d118906087772859.jpg",
+            p3Name:"Nykaa Glamoreyes Colour Eye Pencil Kajal - Blue Hex 01",
+            p4Name:"MRP:",
+            p9Name:"₹400",
+            p7Name:"₹369 |",
+            p8Name:"12% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"ParabenFree"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"BESTSELLER",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/d/0/d067789PLUMX00000089.jpg",
+            p3Name:"Colorbar Intensely Rich Kajal",
+            p4Name:"MRP:",
+            p9Name:"₹120",
+            p7Name:"₹100 |",
+            p8Name:"10% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminA"},
+
+            {   p1Name:"FEATURED", 
+            p2Name:"",
+            imgName:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/f/5f05cc4e000334_1rev.jpg",
+            p3Name:"Maybelline New York Colossal Kajal Super Black",
+            p4Name:"MRP:",
+            p9Name:"₹330",
+            p7Name:"₹229 |",
+            p8Name:"15% Off",
+            p5Name:"Enjoy Free Gift",
+            p6Name:"ADD TO BAG",
+            proId1:"VitaminE"},
+
+           
+
+    ]
+
+    localStorage.setItem("productDt",JSON.stringify(productData))
+    var productdata = JSON.parse(localStorage.getItem("productDt"))
+
+    var cont = document.querySelector("#container");
+
+    function display(productdata){
+      
+        document.querySelector("#container").innerHTML=" "
+    // categ.innerHTML = null;
+    productdata.forEach(function(elem){
+       var box = document.createElement("div")
+       var box1 = document.createElement("div")
+       box1.setAttribute("class","box11")
+       var box2 = document.createElement("div")
+       box2.setAttribute("class","box12")
+       var box3 = document.createElement("div")
+       box3.setAttribute("class","box13")
+       var filter = document.querySelector("select")
+
+      
+
+
+       var bestSeller = document.createElement("p")
+       bestSeller.innerText = elem.p1Name
+       bestSeller.style.color="#fc2779"
+
+       var pro_type = document.createElement("h4")
+       pro_type.innerText = elem.type;
+
+       var FEATURED = document.createElement("p")
+       FEATURED.innerText = elem.p2Name
+       FEATURED.style.color="green"
+       
+       var avatar = document.createElement("img")
+       avatar.setAttribute("src",elem.imgName)
+
+       var info = document.createElement("h3")
+       info.innerText = elem.p3Name
+       info.style.fontSize="14px"
+       info.style.paddingLeft="60px"
+       info.style.paddingRight="50px"
+
+       var price = document.createElement("p")
+       price.innerText = elem.p4Name
+       price.style.color="grey"
+
+       var pri = document.createElement("p")
+       pri.innerText = elem.p9Name
+       pri.style.color="grey"
+
+       var priceNew = document.createElement("p")
+       priceNew.innerText = elem.p7Name
+       priceNew.style.color="#001325"
+   
+       var dis = document.createElement("p")
+       dis.innerText = elem.p8Name
+       dis.style.color="green"
+
+       var comment = document.createElement("p")
+       comment.innerText = elem.p5Name
+       comment.style.color="#fc2779"
+       comment.style.marginTop="-10px"
+
+       var like = document.createElement("button")
+       like.innerText = "Like❤"
+
+       var button = document.createElement("button")
+       button.innerText = "ADD TO BAG"
+
+       box3.append(price,box2,priceNew,dis)
+       box2.append(pri)
+       box1.append(bestSeller,FEATURED)
+       box.append(box1,avatar,info,box3,comment,like,button)
+       document.querySelector("#container").append(box);
+
+       
+   })
+}
+
+
+display(productdata)
+
+
+
+function filven(){
+    var selcted= document.querySelector("#filBrand").value;
+     var filtrlist=productdata.filter(function(ele){
+          return ele.proId1==selcted
+     })
+     display(filtrlist)
+    
+}
+
+
+</script>
