@@ -368,6 +368,7 @@
 localStorage.setItem("Nykaa",JSON.stringify(mahila_juta))
 var products = document.querySelector("#womens")
 var filter = document.querySelector("select")
+var cartArr=JSON.parse(localStorage.getItem("cartArr"))||[];
 
 
 function Display(data){
@@ -396,6 +397,16 @@ function Display(data){
         var pro_discount = document.createElement("h4")
         pro_discount.innerText = elem.Discount
         pro_discount.setAttribute("class","discountonshoe")
+        sbtn.addEventListener("click",function(){
+            cartItems(elem);
+        })
+        function cartItems(elem){
+                cartArr.push(elem);
+                console.log(cartArr)
+                localStorage.setItem("Selected Items",JSON.stringify(cartArr));
+                alert("Item addded to bag")
+            }   
+        
         
         card.append(img,sbtn,pro_name,pro_type,pro_price,pro_discount)
         document.querySelector("#womens").append(card)
